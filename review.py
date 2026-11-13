@@ -87,15 +87,24 @@ def table(title, groups):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--if-older", type=float, metavar="MIN", help="skip if the last review is newer than MIN minutes")
+    a = ap.parse_args()
     with open(STATE, encoding="utf-8") as fh:
         st = json.load(fh)
     overrides = {}
     if os.path.exists(OVERRIDES):
         with open(OVERRIDES, encoding="utf-8") as fh:
             overrides = json.load(fh)
+    now_ts = dt.datetime.now(dt.timezone.utc).timestamp()
+    if a.if_older and now_ts - overrides.get("reviewed_at", 0) < a.if_older * 60:
+        print("last review is recent: skipped")
+        return
     closed = st.get("closed", [])
     by_strategy = breakdown(closed, lambda t: t.get("market", "?"))
     new, actions = decide(by_strategy, overrides)
+    new["reviewed_at"] = int(now_ts)
     with open(OVERRIDES, "w", encoding="utf-8") as fh:
         json.dump(new, fh, indent=2)
 
