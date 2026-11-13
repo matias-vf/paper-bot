@@ -1,11 +1,11 @@
 # Paper bot report
 
-Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-13 13:04 ET.
+Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-13 13:09 ET.
 
 | | |
 | --- | --- |
 | Start | 110.00 USD |
-| Equity | 110.38 USD (+0.3%) |
+| Equity | 110.56 USD (+0.5%) |
 | Cash | 2.20 USD |
 | Closed trades | 0 (0 won) |
 
