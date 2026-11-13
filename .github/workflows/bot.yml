@@ -5,7 +5,7 @@
 name: paper-bot
 on:
   schedule:
-    - cron: "7 * * * *"
+    - cron: "7 14-20 * * 1-5"   # US session hours only (UTC): crypto is off, nothing to do at night
   workflow_dispatch:
 permissions:
   contents: write

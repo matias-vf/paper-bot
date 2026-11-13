@@ -32,12 +32,14 @@ REPORT = os.path.join(HERE, "report.md")
 
 CFG = {
     "start_cash": 110.0,
-    "risk_pct": 0.05,          # 5% of equity at risk per trade (aggressive, by request)
+    "risk_pct": 0.02,          # 2%: the stock breakout tested at about 0R per trade, so it runs as a small forward test
     "max_open": 3,
     "daily_loss_pct": 0.20,    # no new entries once equity is 20% under the day's start
     "rr": 2.0,
     "min_notional": 5.0,
-    "crypto": ["BTC-USD", "ETH-USD", "SOL-USD"],
+    # Crypto off: a 2-year hourly backtest (2024-11 to 2026-11, each year tested apart) of trend-filtered
+    # breakouts, long and short, found no rule that made money on BTC, ETH and SOL in both years.
+    "crypto": [],
     "stocks": ["SPY", "QQQ", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "AMD",
                "AVGO", "NFLX", "JPM", "XOM", "CVX", "USO"],
     "no_entries_after": "15:30",
@@ -238,6 +240,7 @@ def try_entries(st, now_ts, ny, prices):
     candidates = [("crypto", s) for s in CFG["crypto"]]
     minute = ny.hour * 60 + ny.minute
     if stock_session_open(ny) and hm("09:50") <= minute <= hm(CFG["no_entries_after"]):
+        # No SPY trend filter: tested on 60 days x 15 symbols it changed nothing (-0.03R vs +0.02R).
         candidates += [("stock", s) for s in CFG["stocks"]]
     held = {p["sym"] for p in st["positions"]}
     for market, sym in candidates:
