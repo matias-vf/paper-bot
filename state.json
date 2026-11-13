@@ -1,6 +1,7 @@
 {
-  "cash": 2.200000000000017,
-  "positions": [
+  "cash": 110.4544065342029,
+  "positions": [],
+  "closed": [
     {
       "sym": "MSFT",
       "market": "stock",
@@ -10,10 +11,11 @@
       "target": 530.980042,
       "entry_bar_t": 1794581700,
       "opened": "2026-11-13 09:56 ET",
-      "why": "5m close 523.29 above 15m opening-range high 520.90"
+      "why": "flat by close",
+      "exit": 524.099976,
+      "pnl": 0.4544
     }
   ],
-  "closed": [],
   "day": {
     "date": "2026-11-13",
     "start_equity": 110.0
@@ -21,6 +23,6 @@
   "last_signal": {
     "MSFT": 1794581100
   },
-  "equity": 110.756,
-  "updated": "2026-11-13 15:50 ET"
+  "equity": 110.4544,
+  "updated": "2026-11-13 15:55 ET"
 }

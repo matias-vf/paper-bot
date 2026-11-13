@@ -1,1 +1,2 @@
 {"event": "open", "sym": "MSFT", "market": "stock", "qty": 0.20655297, "entry": 521.900024, "stop": 517.360016, "target": 530.980042, "risk_usd": 0.94, "why": "5m close 523.29 above 15m opening-range high 520.90", "at": "2026-11-13 14:56:53Z"}
+{"event": "close", "sym": "MSFT", "exit": 524.099976, "why": "flat by close", "pnl": 0.4544, "at": "2026-11-13 20:55:57Z"}
