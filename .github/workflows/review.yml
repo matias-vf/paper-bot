@@ -1,0 +1,29 @@
+# Every 2 hours: review the bot's closed trades (review.md) and apply the protective rules
+# (overrides.json: pause a strategy on a losing streak or a deep drawdown, halve risk while negative).
+name: review
+on:
+  schedule:
+    - cron: "37 */2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: review             # not the bot's group: its loop runs for hours. They touch different files and rebase before pushing.
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python review.py
+      - name: Save the review
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "paper-bot@users.noreply.github.com"
+          git add review.md overrides.json
+          git diff --cached --quiet || git commit -q -m "review $(date -u +%H:%M)"
+          git pull -q --rebase origin main && git push -q origin HEAD:main

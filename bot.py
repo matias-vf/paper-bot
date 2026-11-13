@@ -29,6 +29,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "state.json")
 TRADES = os.path.join(HERE, "trades.jsonl")
 REPORT = os.path.join(HERE, "report.md")
+OVERRIDES = os.path.join(HERE, "overrides.json")
 
 CFG = {
     "start_cash": 110.0,
@@ -174,7 +175,7 @@ def close(st, pos, price, why):
     st["cash"] += value(pos, price)
     pnl = pos["qty"] * (price - pos["entry"]) * pos.get("side", 1)
     st["positions"].remove(pos)
-    rec = dict(pos, exit=round(price, 6), why=why, pnl=round(pnl, 4))
+    rec = dict(pos, exit=round(price, 6), exit_why=why, pnl=round(pnl, 4))   # keeps the entry reason in "why"
     st["closed"].append(rec)
     log({"event": "close", "sym": pos["sym"], "exit": round(price, 6), "why": why, "pnl": round(pnl, 4)})
 
@@ -276,6 +277,11 @@ def try_entries(st, now_ts, ny, prices):
         # No SPY trend filter: tested on 60 days x 15 symbols it changed nothing (-0.03R vs +0.02R).
         candidates += [("stock", s) for s in CFG["stocks"]]
     held = {p["sym"] for p in st["positions"]}
+    ov = {}
+    if os.path.exists(OVERRIDES):   # written by review.py every 2 hours
+        with open(OVERRIDES, encoding="utf-8") as fh:
+            ov = json.load(fh)
+    candidates = [(m, s) for m, s in candidates if m not in ov.get("paused", [])]
     for market, sym in candidates:
         if len(st["positions"]) >= CFG["max_open"]:
             break
@@ -299,7 +305,7 @@ def try_entries(st, now_ts, ny, prices):
         if risk_per_unit <= 0:
             continue
         target = price + side * sig.get("rr", CFG["rr"]) * risk_per_unit
-        qty = (eq * CFG["risk_pct"]) / risk_per_unit
+        qty = (eq * CFG["risk_pct"] * ov.get("risk_scale", {}).get(market, 1.0)) / risk_per_unit
         qty = min(qty, st["cash"] * 0.98 / price)        # no leverage
         if qty * price < CFG["min_notional"]:
             continue
