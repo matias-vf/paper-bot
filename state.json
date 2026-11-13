@@ -1,0 +1,12 @@
+{
+  "cash": 110.0,
+  "positions": [],
+  "closed": [],
+  "day": {
+    "date": "2026-11-13",
+    "start_equity": 110.0
+  },
+  "last_signal": {},
+  "equity": 110.0,
+  "updated": "2026-11-13 09:17 ET"
+}
