@@ -77,15 +77,16 @@ def stock_session_open(ny):
 # ---------------------------------------------------------------- data
 
 def bars(sym, interval, rng):
-    url = "https://query2.finance.yahoo.com/v8/finance/chart/%s?interval=%s&range=%s" % (sym, interval, rng)
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 paper-bot"})
-    for attempt in range(2):
+    # query2 first, query1 if Yahoo refuses (cloud runners sometimes get a 429)
+    for attempt, host in enumerate(["query2", "query1", "query1"]):
+        url = "https://%s.finance.yahoo.com/v8/finance/chart/%s?interval=%s&range=%s" % (host, sym, interval, rng)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 paper-bot"})
         try:
             with urllib.request.urlopen(req, timeout=20) as r:
                 res = json.load(r)["chart"]["result"][0]
             break
         except Exception:
-            if attempt:
+            if attempt == 2:
                 raise
             time.sleep(3)
     q = res["indicators"]["quote"][0]
