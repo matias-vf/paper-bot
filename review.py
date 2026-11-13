@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Review the bot's closed trades every 2 hours: what went well, what went badly, what to change.
+"""Review the bot's closed trades every 5 trades: what went well, what went badly, what to change.
 
-  python review.py            # writes review.md and overrides.json
+  python review.py                    # review now: writes review.md and overrides.json
+  python review.py --every-trades 5   # only if 5 more trades closed since the last review (the bot runs this)
 
 What it changes on its own is deliberately limited. Tuning parameters on a handful of live trades
 would fit noise (see the overfitting lessons), so the only automatic actions are protective:
@@ -27,6 +28,11 @@ REVIEW = os.path.join(HERE, "review.md")
 MIN_TRADES = 8
 PAUSE_R = -4.0
 MAX_LOSING_STREAK = 6
+
+
+def due(n_closed, reviewed_trades, every):
+    """A review is due once `every` more trades have closed since the last one."""
+    return n_closed - reviewed_trades >= every
 
 
 def exit_reason(t):
@@ -89,7 +95,8 @@ def table(title, groups):
 def main():
     import argparse
     ap = argparse.ArgumentParser()
-    ap.add_argument("--if-older", type=float, metavar="MIN", help="skip if the last review is newer than MIN minutes")
+    ap.add_argument("--every-trades", type=int, metavar="N",
+                    help="run only once N more trades have closed since the last review")
     a = ap.parse_args()
     with open(STATE, encoding="utf-8") as fh:
         st = json.load(fh)
@@ -97,14 +104,15 @@ def main():
     if os.path.exists(OVERRIDES):
         with open(OVERRIDES, encoding="utf-8") as fh:
             overrides = json.load(fh)
-    now_ts = dt.datetime.now(dt.timezone.utc).timestamp()
-    if a.if_older and now_ts - overrides.get("reviewed_at", 0) < a.if_older * 60:
-        print("last review is recent: skipped")
-        return
     closed = st.get("closed", [])
+    if a.every_trades and not due(len(closed), overrides.get("reviewed_trades", 0), a.every_trades):
+        print("%d closed trades, last review at %d: next review at %d" % (
+            len(closed), overrides.get("reviewed_trades", 0), overrides.get("reviewed_trades", 0) + a.every_trades))
+        return
     by_strategy = breakdown(closed, lambda t: t.get("market", "?"))
     new, actions = decide(by_strategy, overrides)
-    new["reviewed_at"] = int(now_ts)
+    new["reviewed_trades"] = len(closed)
+    new["reviewed_at"] = int(dt.datetime.now(dt.timezone.utc).timestamp())
     with open(OVERRIDES, "w", encoding="utf-8") as fh:
         json.dump(new, fh, indent=2)
 

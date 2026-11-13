@@ -41,6 +41,12 @@ class ReviewTest(unittest.TestCase):
         self.assertEqual(again["risk_scale"], {"stock": 1.0})
         self.assertTrue(actions[0].startswith("RESTORED"))
 
+    def test_review_is_due_every_five_trades(self):
+        self.assertFalse(review.due(4, 0, 5))
+        self.assertTrue(review.due(5, 0, 5))
+        self.assertFalse(review.due(9, 5, 5))
+        self.assertTrue(review.due(11, 5, 5))   # two closed in one tick still triggers once
+
     def test_pauses_are_sticky(self):
         new, actions = decide([2] * 10, {"paused": ["stock"]})
         self.assertEqual((new["paused"], actions), (["stock"], []))

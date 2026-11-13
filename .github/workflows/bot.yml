@@ -29,7 +29,7 @@ jobs:
           tick() {
             git pull -q --rebase origin main || true
             python bot.py tick || echo "tick failed"
-            python review.py --if-older 115 || echo "review failed"   # backup for the 2-hourly review job
+            python review.py --every-trades 5 || echo "review failed"   # reviews after every 5 closed trades
             git add state.json trades.jsonl report.md review.md overrides.json
             git diff --cached --quiet || git commit -q -m "bot tick $(date -u +%H:%M)"
             git push -q origin HEAD:main || echo "push failed"

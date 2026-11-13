@@ -1,9 +1,7 @@
-# Every 2 hours: review the bot's closed trades (review.md) and apply the protective rules
-# (overrides.json: pause a strategy on a losing streak or a deep drawdown, halve risk while negative).
+# Manual review of the bot's closed trades (review.md) with the protective rules (overrides.json).
+# The bot itself reviews automatically after every 5 closed trades; use "Run workflow" for one now.
 name: review
 on:
-  schedule:
-    - cron: "37 */2 * * *"
   workflow_dispatch:
 permissions:
   contents: write
