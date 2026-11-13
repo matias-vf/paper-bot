@@ -1,9 +1,11 @@
-# Runs the paper bot every 5 minutes on GitHub's servers, so it keeps going with your PC off.
-# GitHub may delay scheduled runs by several minutes at busy times.
+# Runs the paper bot on GitHub's servers, so it keeps going with your PC off.
+# One run loops for ~5.5 hours, ticking every 5 minutes and saving the ledger after each tick.
+# GitHub's scheduler is best-effort (it can skip or delay runs), so the hourly schedule only
+# restarts the loop if it is not already running; start it by hand with "Run workflow".
 name: paper-bot
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "7 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -11,19 +13,23 @@ concurrency:
   group: paper-bot
   cancel-in-progress: false
 jobs:
-  tick:
+  loop:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python bot.py tick
-      - name: Save the ledger
+      - name: Tick every 5 minutes for ~5.5 hours
         run: |
           git config user.name "paper-bot"
           git config user.email "paper-bot@users.noreply.github.com"
-          git add state.json trades.jsonl report.md
-          git diff --cached --quiet || git commit -m "bot tick $(date -u +%H:%M)"
-          git push
+          for i in $(seq 1 66); do
+            git pull -q --rebase origin main || true
+            python bot.py tick || echo "tick $i failed"
+            git add state.json trades.jsonl report.md
+            git diff --cached --quiet || git commit -q -m "bot tick $(date -u +%H:%M)"
+            git push -q origin HEAD:main || echo "push $i failed"
+            sleep 300
+          done
