@@ -1,11 +1,12 @@
 # Runs the paper bot on GitHub's servers, so it keeps going with your PC off.
-# One run loops for ~5.5 hours, ticking every 5 minutes and saving the ledger after each tick.
-# GitHub's scheduler is best-effort (it can skip or delay runs), so the hourly schedule only
-# restarts the loop if it is not already running; start it by hand with "Run workflow".
+# Every hour GitHub starts a run (best effort: it can be late or skipped):
+#   - during the US session (weekdays 14:00-20:59 UTC) the run ticks every 5 minutes until 21:00 UTC;
+#   - otherwise it ticks once (the night rule, ETH 1h breakdown, only needs hourly checks).
+# Start it by hand any time with "Run workflow".
 name: paper-bot
 on:
   schedule:
-    - cron: "7 14-20 * * 1-5"   # US session hours only (UTC): crypto is off, nothing to do at night
+    - cron: "7 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -13,7 +14,7 @@ concurrency:
   group: paper-bot
   cancel-in-progress: false
 jobs:
-  loop:
+  run:
     runs-on: ubuntu-latest
     timeout-minutes: 345
     steps:
@@ -21,15 +22,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Tick every 5 minutes for ~5.5 hours
+      - name: Tick
         run: |
           git config user.name "paper-bot"
           git config user.email "paper-bot@users.noreply.github.com"
-          for i in $(seq 1 66); do
+          tick() {
             git pull -q --rebase origin main || true
-            python bot.py tick || echo "tick $i failed"
+            python bot.py tick || echo "tick failed"
             git add state.json trades.jsonl report.md
             git diff --cached --quiet || git commit -q -m "bot tick $(date -u +%H:%M)"
-            git push -q origin HEAD:main || echo "push $i failed"
-            sleep 300
-          done
+            git push -q origin HEAD:main || echo "push failed"
+          }
+          in_session() { [ "$(date -u +%u)" -le 5 ] && [ "$(date -u +%H)" -ge 14 ] && [ "$(date -u +%H)" -lt 21 ]; }
+          tick
+          while in_session; do sleep 300; tick; done

@@ -40,6 +40,7 @@ CFG = {
     # Crypto off: a 2-year hourly backtest (2024-11 to 2026-11, each year tested apart) of trend-filtered
     # breakouts, long and short, found no rule that made money on BTC, ETH and SOL in both years.
     "crypto": [],
+    "crypto_short": ["ETH-USD"],   # 1h breakdown in a daily downtrend, see crypto_short_signal
     "stocks": ["SPY", "QQQ", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "AMD",
                "AVGO", "NFLX", "JPM", "XOM", "CVX", "USO"],
     "no_entries_after": "15:30",
@@ -138,8 +139,15 @@ def log(event):
     print("  %s" % json.dumps(event))
 
 
+def value(pos, price):
+    """What the position is worth in cash. A short keeps its notional as collateral (no leverage)."""
+    if pos.get("side", 1) > 0:
+        return pos["qty"] * price
+    return pos["qty"] * (2 * pos["entry"] - price)
+
+
 def equity(st, prices):
-    return st["cash"] + sum(p["qty"] * prices.get(p["sym"], p["entry"]) for p in st["positions"])
+    return st["cash"] + sum(value(p, prices.get(p["sym"], p["entry"])) for p in st["positions"])
 
 
 # ---------------------------------------------------------------- exits
@@ -147,19 +155,24 @@ def equity(st, prices):
 def walk_exit(pos, bs):
     """First bar after entry that hits the stop or the target. Stop wins a tie (conservative);
     a gap through a level fills at the bar's open."""
+    long = pos.get("side", 1) > 0
     for b in bs:
         if b["t"] < pos["entry_bar_t"]:
             continue
-        if b["l"] <= pos["stop"]:
+        if long and b["l"] <= pos["stop"]:
             return min(b["o"], pos["stop"]), "stop", b["t"]
-        if b["h"] >= pos["target"]:
+        if not long and b["h"] >= pos["stop"]:
+            return max(b["o"], pos["stop"]), "stop", b["t"]
+        if long and b["h"] >= pos["target"]:
             return max(b["o"], pos["target"]), "target", b["t"]
+        if not long and b["l"] <= pos["target"]:
+            return min(b["o"], pos["target"]), "target", b["t"]
     return None
 
 
 def close(st, pos, price, why):
-    st["cash"] += pos["qty"] * price
-    pnl = pos["qty"] * (price - pos["entry"])
+    st["cash"] += value(pos, price)
+    pnl = pos["qty"] * (price - pos["entry"]) * pos.get("side", 1)
     st["positions"].remove(pos)
     rec = dict(pos, exit=round(price, 6), why=why, pnl=round(pnl, 4))
     st["closed"].append(rec)
@@ -209,6 +222,26 @@ def crypto_signal(sym, now_ts):
             "why": "15m close %.4f above 4h high %.4f, EMA20 > EMA50" % (last["c"], prior_high)}
 
 
+def crypto_short_signal(sym, now_ts):
+    """1-hour breakdown, only while the coin trades under its daily EMA50. The one crypto rule that
+    made money in both years of a 2-year hourly backtest (ETH, 12-bar breakdown, 1.5R target:
+    +5% and +17%); its neighbours were mixed, so it runs at 2% risk as a forward test."""
+    daily = [b["c"] for b in bars(sym, "1d", "1y")]
+    if len(daily) < 60 or daily[-1] >= ema(daily, 50):
+        return None
+    bs = completed(bars(sym, "1h", "30d"), 3600, now_ts)
+    if len(bs) < 200:
+        return None
+    c = [b["c"] for b in bs]
+    last = bs[-1]
+    e20, e50 = ema(c[-100:], 20), ema(c[-200:], 50)
+    prior_low = min(b["l"] for b in bs[-13:-1])
+    if not (last["c"] < prior_low and last["c"] < e20 < e50):
+        return None
+    return {"signal_t": last["t"], "ref": last["c"], "stop": max(b["h"] for b in bs[-8:]), "side": -1, "rr": 1.5,
+            "why": "1h close %.2f under 12h low %.2f, EMA20 < EMA50, daily downtrend" % (last["c"], prior_low)}
+
+
 def stock_signal(sym, now_ts, ny):
     bs = completed(bars(sym, "5m", "1d"), 300, now_ts)
     day = ny.date()
@@ -237,7 +270,7 @@ def try_entries(st, now_ts, ny, prices):
     if eq < st["day"]["start_equity"] * (1 - CFG["daily_loss_pct"]):
         print("  daily loss limit reached: no new entries today")
         return
-    candidates = [("crypto", s) for s in CFG["crypto"]]
+    candidates = [("crypto", s) for s in CFG["crypto"]] + [("crypto_short", s) for s in CFG["crypto_short"]]
     minute = ny.hour * 60 + ny.minute
     if stock_session_open(ny) and hm("09:50") <= minute <= hm(CFG["no_entries_after"]):
         # No SPY trend filter: tested on 60 days x 15 symbols it changed nothing (-0.03R vs +0.02R).
@@ -249,23 +282,29 @@ def try_entries(st, now_ts, ny, prices):
         if sym in held:
             continue
         try:
-            sig = crypto_signal(sym, now_ts) if market == "crypto" else stock_signal(sym, now_ts, ny)
+            if market == "crypto":
+                sig = crypto_signal(sym, now_ts)
+            elif market == "crypto_short":
+                sig = crypto_short_signal(sym, now_ts)
+            else:
+                sig = stock_signal(sym, now_ts, ny)
         except Exception as e:
             print("  %s: no data (%s)" % (sym, e))
             continue
         if not sig or st["last_signal"].get(sym) == sig["signal_t"]:
             continue
+        side = sig.get("side", 1)
         price = bars(sym, "1m", "1d")[-1]["c"]          # fill at the latest price
-        risk_per_unit = price - sig["stop"]
+        risk_per_unit = (price - sig["stop"]) * side
         if risk_per_unit <= 0:
             continue
-        target = price + CFG["rr"] * risk_per_unit
+        target = price + side * sig.get("rr", CFG["rr"]) * risk_per_unit
         qty = (eq * CFG["risk_pct"]) / risk_per_unit
         qty = min(qty, st["cash"] * 0.98 / price)        # no leverage
         if qty * price < CFG["min_notional"]:
             continue
         st["cash"] -= qty * price
-        pos = {"sym": sym, "market": market, "qty": round(qty, 8), "entry": price, "stop": round(sig["stop"], 6),
+        pos = {"sym": sym, "market": market, "side": side, "qty": round(qty, 8), "entry": price, "stop": round(sig["stop"], 6),
                "target": round(target, 6), "entry_bar_t": int(now_ts) // 300 * 300, "opened": ny.strftime("%Y-%m-%d %H:%M ET"),
                "why": sig["why"]}
         st["positions"].append(pos)
@@ -324,6 +363,17 @@ def selftest():
     assert walk_exit(pos, [b(10, 100, 103, 98, 101)])[:2] == (99, "stop"), "stop wins a tie"
     assert walk_exit(pos, [b(10, 97, 98, 96, 97)])[:2] == (97, "stop"), "gap down fills at the open"
     assert walk_exit(pos, [b(10, 103, 104, 102.5, 103)])[:2] == (103, "target"), "gap up fills at the open"
+    short = {"sym": "X", "side": -1, "qty": 2, "entry": 100, "stop": 101, "target": 98.5, "entry_bar_t": 10}
+    assert walk_exit(short, [b(10, 100, 101.5, 99, 100)])[:2] == (101, "stop"), "short stop on a high"
+    assert walk_exit(short, [b(10, 100, 100.5, 98, 99)])[:2] == (98.5, "target"), "short target on a low"
+    assert walk_exit(short, [b(10, 102, 103, 101.5, 102)])[:2] == (102, "stop"), "short gap up fills at the open"
+    st = {"cash": 0.0, "positions": [dict(short)], "closed": []}
+    assert value(short, 98.5) == 203 and equity(st, {}) == 200   # collateral 200 + 3 profit; unpriced = flat
+    global log
+    log, saved = (lambda e: None), log
+    close(st, st["positions"][0], 98.5, "target")
+    log = saved
+    assert st["cash"] == 203 and st["closed"][0]["pnl"] == 3
     assert ny_offset(dt.datetime(2026, 11, 13, 15, tzinfo=dt.timezone.utc)) == -5
     assert ny_offset(dt.datetime(2026, 7, 1, 15, tzinfo=dt.timezone.utc)) == -4
     assert ny_offset(dt.datetime(2026, 3, 8, 7, tzinfo=dt.timezone.utc)) == -4    # DST starts 2026-03-08
