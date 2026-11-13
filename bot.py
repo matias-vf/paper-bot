@@ -184,6 +184,12 @@ def manage(st, now_ts, ny, prices):
 # ---------------------------------------------------------------- entries
 
 def crypto_signal(sym, now_ts):
+    # Regime filter: only buy breakouts when the coin is in a daily uptrend. On Sep-Nov 2026 data
+    # (TradingView Strategy Tester and a 60-day 15m backtest) every variant of the breakout lost
+    # money in the downtrend; this keeps the bot out until the trend turns.
+    daily = [b["c"] for b in bars(sym, "1d", "1y")]
+    if len(daily) < 60 or daily[-1] <= ema(daily, 50):
+        return None
     bs = completed(bars(sym, "15m", "5d"), 900, now_ts)
     if len(bs) < 60:
         return None

@@ -1,0 +1,22 @@
+//@version=6
+// Same crypto rule as bot.py, for TradingView's Strategy Tester (15-minute chart).
+strategy("Bot crypto breakout", overlay=true, initial_capital=110, default_qty_type=strategy.percent_of_equity, default_qty_value=95, commission_type=strategy.commission.percent, commission_value=0.1, slippage=2, process_orders_on_close=false)
+rr = input.float(2.0, "Reward:risk", minval=0.5, step=0.5)
+lookback = input.int(16, "Breakout lookback (bars)", minval=2)
+stopBars = input.int(8, "Stop lookback (bars)", minval=2)
+e20 = ta.ema(close, 20)
+e50 = ta.ema(close, 50)
+priorHigh = ta.highest(high, lookback)[1]
+a = ta.atr(14)
+lowStop = ta.lowest(low, stopBars)
+longSig = close > priorHigh and close > e20 and e20 > e50
+var float stp = na
+var float tgt = na
+if longSig and strategy.position_size == 0
+    stp := close - lowStop < 0.5 * a ? close - a : lowStop
+    tgt := close + rr * (close - stp)
+    strategy.entry("L", strategy.long)
+if strategy.position_size > 0
+    strategy.exit("X", "L", stop=stp, limit=tgt)
+plot(e20, "EMA20", color.orange)
+plot(e50, "EMA50", color.blue)
