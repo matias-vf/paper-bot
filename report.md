@@ -1,18 +1,19 @@
 # Paper bot report
 
-Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-13 09:27 ET.
+Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-13 09:56 ET.
 
 | | |
 | --- | --- |
 | Start | 110.00 USD |
 | Equity | 110.00 USD (+0.0%) |
-| Cash | 110.00 USD |
+| Cash | 2.20 USD |
 | Closed trades | 0 (0 won) |
 
 ## Open
 
 | symbol | market | qty | entry | stop | target | opened | why |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| MSFT | stock | 0.206553 | 521.9000 | 517.3600 | 530.9800 | 2026-11-13 09:56 ET | 5m close 523.29 above 15m opening-range high 520.90 |
 
 ## Closed
 
