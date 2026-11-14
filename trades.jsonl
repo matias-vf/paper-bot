@@ -1,2 +1,3 @@
 {"event": "open", "sym": "MSFT", "market": "stock", "qty": 0.20655297, "entry": 521.900024, "stop": 517.360016, "target": 530.980042, "risk_usd": 0.94, "why": "5m close 523.29 above 15m opening-range high 520.90", "at": "2026-11-13 14:56:53Z"}
 {"event": "close", "sym": "MSFT", "exit": 524.099976, "why": "flat by close", "pnl": 0.4544, "at": "2026-11-13 20:55:57Z"}
+{"event": "open", "sym": "ETH-USD", "market": "crypto_short", "qty": 0.03440407, "entry": 1890.439941, "stop": 1954.650024, "target": 1794.124817, "risk_usd": 2.21, "why": "1h close 1910.53 under 12h low 1912.44, EMA20 < EMA50, daily downtrend", "at": "2026-11-14 03:52:28Z"}
