@@ -1,8 +1,8 @@
 # Runs the paper bot on GitHub's servers, so it keeps going with your PC off.
 # Every hour GitHub starts a run (best effort: it can be late or skipped):
 #   - during the US session (weekdays 14:00-20:59 UTC) the run ticks every 5 minutes until 21:00 UTC;
-#   - otherwise it ticks once (the night rule, ETH 1h breakdown, only needs hourly checks).
-# Start it by hand any time with "Run workflow".
+#   - otherwise it ticks once (the validator's pick uses hourly bars).
+# "Run workflow" by hand starts a run that ticks every 5 minutes for 5.5 hours, day or night.
 name: paper-bot
 on:
   schedule:
@@ -35,5 +35,8 @@ jobs:
             git push -q origin HEAD:main || echo "push failed"
           }
           in_session() { [ "$(date -u +%u)" -le 5 ] && [ "$(date -u +%H)" -ge 14 ] && [ "$(date -u +%H)" -lt 21 ]; }
+          # a run started by hand loops for 5.5 h whatever the hour (GitHub's hourly schedule can stall)
+          START=$(date +%s)
+          manual() { [ "$GITHUB_EVENT_NAME" = workflow_dispatch ] && [ $(( $(date +%s) - START )) -lt 19800 ]; }
           tick
-          while in_session; do sleep 300; tick; done
+          while in_session || manual; do sleep 300; tick; done
