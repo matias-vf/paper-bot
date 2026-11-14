@@ -1,0 +1,87 @@
+{
+  "at": "2026-11-14T22:17:05Z",
+  "criteria_hash": "98c7ea9a1593f164",
+  "log_intact": true,
+  "pick": {
+    "strategy": "rsi_reversion",
+    "version": "4e672ec6161b23e5",
+    "market": "CL=F",
+    "verdict": "PROBATION",
+    "risk_pct": 0.005,
+    "params": {
+      "low": 10,
+      "rsi_n": 5,
+      "stop_atr": 1.5
+    },
+    "oos_ret": 0.1866600163492682,
+    "oos_mean_r": 0.09671951866251954,
+    "lockbox_mean_r": 0.6184010872201959,
+    "judged_at": "2026-11-14T22:16:30Z"
+  },
+  "ranking": [
+    {
+      "strategy": "rsi_reversion",
+      "version": "4e672ec6161b23e5",
+      "market": "CL=F",
+      "verdict": "PROBATION",
+      "risk_pct": 0.005,
+      "params": {
+        "low": 10,
+        "rsi_n": 5,
+        "stop_atr": 1.5
+      },
+      "oos_ret": 0.1866600163492682,
+      "oos_mean_r": 0.09671951866251954,
+      "lockbox_mean_r": 0.6184010872201959,
+      "judged_at": "2026-11-14T22:16:30Z"
+    },
+    {
+      "strategy": "ema_trend",
+      "version": "135be6f140edcdf6",
+      "market": "XLE",
+      "verdict": "APPROVED",
+      "risk_pct": 0.02,
+      "params": {
+        "fast": 10,
+        "rr": 3,
+        "side": 1,
+        "slow": 50
+      },
+      "oos_ret": 0.08244996931570236,
+      "oos_mean_r": 0.3110268909580028,
+      "lockbox_mean_r": 1.5583633923158315,
+      "judged_at": "2026-11-14T22:15:57Z"
+    },
+    {
+      "strategy": "breakdown_short",
+      "version": "c25b478b8c442f10",
+      "market": "BTC-USD",
+      "verdict": "APPROVED",
+      "risk_pct": 0.02,
+      "params": {
+        "n": 24,
+        "rr": 2
+      },
+      "oos_ret": 0.04597032054508343,
+      "oos_mean_r": 0.19129851104762746,
+      "lockbox_mean_r": 0.025798059039622016,
+      "judged_at": "2026-11-14T22:16:46Z"
+    },
+    {
+      "strategy": "rsi_reversion",
+      "version": "4e672ec6161b23e5",
+      "market": "EURUSD=X",
+      "verdict": "PROBATION",
+      "risk_pct": 0.005,
+      "params": {
+        "low": 30,
+        "rsi_n": 14,
+        "stop_atr": 3
+      },
+      "oos_ret": 0.011587360250923107,
+      "oos_mean_r": 0.04002805436256612,
+      "lockbox_mean_r": 0.1920133799011572,
+      "judged_at": "2026-11-14T22:16:35Z"
+    }
+  ]
+}

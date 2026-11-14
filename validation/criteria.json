@@ -1,0 +1,17 @@
+{
+  "frozen_on": "2026-11-14",
+  "note": "Set before any evaluation. Changing this file changes its hash; verdicts record the hash they were judged under.",
+  "lockbox_fraction": 0.15,
+  "walk_forward_folds": 4,
+  "min_is_trades": 10,
+  "min_oos_trades": 30,
+  "min_oos_mean_r": 0.05,
+  "min_lockbox_mean_r": 0.0,
+  "min_costs_x2_mean_r": 0.0,
+  "min_positive_folds": 2,
+  "min_plateau_share": 0.5,
+  "max_permutation_p": 0.10,
+  "permutations": 100,
+  "lookahead_checks": 5,
+  "risk": {"APPROVED": 0.02, "PROBATION": 0.005}
+}
