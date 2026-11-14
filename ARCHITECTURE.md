@@ -72,9 +72,12 @@ Separación efectiva, no solo de nombre:
 2. **Caja fuerte de datos.** Los datos posteriores a la fecha de corte (los últimos 6 meses en 1d y 1h, los últimos 15 días en 5m) solo los lee el validador. El creador no puede optimizar sobre ellos.
 3. **Pruebas propias.** El validador vuelve a ejecutar el backtest con su propia instancia del motor y su propio modelo de costes. No acepta las cifras del creador.
 4. **Comprobaciones:** procedencia y calidad de los datos; coherencia de la hipótesis (¿el resultado sale de donde dice la hipótesis?); look-ahead (señal calculada con datos desplazados una vela, que debe dar el mismo resultado); fuga de datos (sin indicadores con información futura); número de observaciones; fuera de muestra; walk-forward con matriz; estabilidad de parámetros; sensibilidad a costes; robustez por periodos y por regímenes; rendimiento ajustado al riesgo; permutación (azar); comparación con benchmarks (comprar y mantener, aleatorio con el mismo número de operaciones).
-5. **Veredicto:** `APPROVED`, `REJECTED` o `NEEDS MORE EVIDENCE`, con métricas, motivos, fecha, versión de la estrategia, hash de los criterios y hash de los datos.
+5. **Veredicto:** `APPROVED`, `PROBATION`, `REJECTED` o `NEEDS MORE EVIDENCE`, con métricas, motivos, fecha, versión de la estrategia, hash de los criterios y hash de los datos. `PROBATION` = no pasa todas las pruebas, pero gana dinero **fuera de muestra y después de costes**.
 6. **Registro inmutable:** `validations.jsonl`, solo se añaden líneas. Cada línea lleva el hash de la anterior (cadena de hashes) y se sube a git, así que cualquier edición rompe la cadena y es visible en el historial.
-7. **Bloqueo por defecto:** el bot solo opera estrategias cuya versión exacta tenga `APPROVED` como último veredicto. Una estrategia sin veredicto, con `REJECTED`, `NEEDS MORE EVIDENCE` o con un fallo del validador queda bloqueada.
+7. **Selección de la más rentable (petición del usuario, 2026-11-14):** el validador ordena todas las estrategias por su resultado **fuera de muestra, después de costes**, nunca por el backtest con el que se diseñaron, que siempre sale inflado. El bot opera la primera de la lista:
+   - si es `APPROVED`, con el riesgo normal (2% por operación);
+   - si es `PROBATION`, con riesgo reducido (0,5% por operación), y sube a normal si en vivo confirma lo esperado.
+   Solo queda sin operar si incluso la mejor pierde dinero fuera de muestra después de costes, porque en ese caso "la más rentable" sería solo la que menos pierde. Una estrategia sin veredicto, `REJECTED` o con un fallo del validador no entra en la lista.
 8. **Un rechazo no se convierte en aprobación:** solo una versión nueva con una validación nueva y completa.
 9. **Control técnico:** un test de CI falla si `generator/` importa algo de escritura del validador o toca `criteria.json` o `validations.jsonl`.
 
@@ -112,4 +115,4 @@ La tabla `trades` se amplía con: estrategia y versión, stop, take profit, tama
 6. **Memoria ampliada y análisis posterior;** el bot solo opera lo `APPROVED`.
 7. **Ampliar datos a más de 1 millón de velas** y, si se instalan, Parquet y DuckDB.
 
-Todo resultado de estas fases es simulado. La salida esperada más probable es que la mayoría de las estrategias sean rechazadas. Si ninguna se aprueba, el bot no opera.
+Todo resultado de estas fases es simulado. Muchas estrategias no pasarán todas las pruebas; el bot opera igualmente la más rentable fuera de muestra, con el riesgo que corresponda a su veredicto (punto 7 de 3.3).
