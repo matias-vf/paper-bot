@@ -33,19 +33,11 @@ OVERRIDES = os.path.join(HERE, "overrides.json")
 
 CFG = {
     "start_cash": 110.0,
-    "risk_pct": 0.02,          # 2%: the stock breakout tested at about 0R per trade, so it runs as a small forward test
+    # what to trade and the risk per trade come from validation/selection.json (the validator's pick)
     "max_open": 3,
     "daily_loss_pct": 0.20,    # no new entries once equity is 20% under the day's start
-    "rr": 2.0,
     "min_notional": 5.0,
-    # Crypto off: a 2-year hourly backtest (2024-11 to 2026-11, each year tested apart) of trend-filtered
-    # breakouts, long and short, found no rule that made money on BTC, ETH and SOL in both years.
-    "crypto": [],
-    "crypto_short": ["ETH-USD"],   # 1h breakdown in a daily downtrend, see crypto_short_signal
-    "stocks": ["SPY", "QQQ", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "AMD",
-               "AVGO", "NFLX", "JPM", "XOM", "CVX", "USO"],
-    "no_entries_after": "15:30",
-    "flat_by": "15:55",
+    "flat_by": "15:55",        # only for positions opened by the old stock rule
 }
 cfg_path = os.path.join(HERE, "config.json")
 if os.path.exists(cfg_path):
@@ -104,19 +96,6 @@ def bars(sym, interval, rng):
 
 def completed(bs, seconds, now_ts):
     return [b for b in bs if b["t"] + seconds <= now_ts]
-
-
-def ema(xs, n):
-    k, e = 2 / (n + 1), xs[0]
-    for x in xs[1:]:
-        e = x * k + e * (1 - k)
-    return e
-
-
-def atr(bs, n=14):
-    tr = [max(bs[i]["h"] - bs[i]["l"], abs(bs[i]["h"] - bs[i - 1]["c"]), abs(bs[i]["l"] - bs[i - 1]["c"]))
-          for i in range(len(bs) - n, len(bs))]
-    return sum(tr) / n
 
 
 # ---------------------------------------------------------------- ledger
@@ -183,7 +162,7 @@ def close(st, pos, price, why):
 def manage(st, now_ts, ny, prices):
     for pos in list(st["positions"]):
         try:
-            bs = bars(pos["sym"], "5m", "5d" if pos["market"] == "crypto" else "1d")
+            bs = bars(pos["sym"], "5m", "1d" if pos["market"] == "stock" else "5d")
         except Exception as e:
             print("  %s: no data (%s), position kept" % (pos["sym"], e))
             continue
@@ -193,74 +172,39 @@ def manage(st, now_ts, ny, prices):
         hit = walk_exit(pos, bs)  # the live bar counts too: a stop that traded is a stop
         if hit:
             close(st, pos, hit[0], hit[1])
+        elif now_ts >= pos.get("expires", float("inf")):
+            close(st, pos, bs[-1]["c"], "max hold (48h)")
         elif pos["market"] == "stock" and (ny.hour * 60 + ny.minute >= hm(CFG["flat_by"]) or not stock_session_open(ny)):
             close(st, pos, bs[-1]["c"], "flat by close")
 
 
 # ---------------------------------------------------------------- entries
 
-def crypto_signal(sym, now_ts):
-    # Regime filter: only buy breakouts when the coin is in a daily uptrend. On Sep-Nov 2026 data
-    # (TradingView Strategy Tester and a 60-day 15m backtest) every variant of the breakout lost
-    # money in the downtrend; this keeps the bot out until the trend turns.
-    daily = [b["c"] for b in bars(sym, "1d", "1y")]
-    if len(daily) < 60 or daily[-1] <= ema(daily, 50):
-        return None
-    bs = completed(bars(sym, "15m", "5d"), 900, now_ts)
-    if len(bs) < 60:
-        return None
-    c = [b["c"] for b in bs]
-    last = bs[-1]
-    e20, e50 = ema(c[-80:], 20), ema(c[-150:], 50)
-    prior_high = max(b["h"] for b in bs[-17:-1])           # the 4 hours before the last bar
-    if not (last["c"] > prior_high and last["c"] > e20 > e50):
-        return None
-    a = atr(bs)
-    stop = min(b["l"] for b in bs[-8:])
-    if last["c"] - stop < 0.5 * a:
-        stop = last["c"] - a
-    return {"signal_t": last["t"], "ref": last["c"], "stop": stop,
-            "why": "15m close %.4f above 4h high %.4f, EMA20 > EMA50" % (last["c"], prior_high)}
+SELECTION = os.path.join(HERE, "validation", "selection.json")
 
 
-def crypto_short_signal(sym, now_ts):
-    """1-hour breakdown, only while the coin trades under its daily EMA50. The one crypto rule that
-    made money in both years of a 2-year hourly backtest (ETH, 12-bar breakdown, 1.5R target:
-    +5% and +17%); its neighbours were mixed, so it runs at 2% risk as a forward test."""
-    daily = [b["c"] for b in bars(sym, "1d", "1y")]
-    if len(daily) < 60 or daily[-1] >= ema(daily, 50):
-        return None
-    bs = completed(bars(sym, "1h", "30d"), 3600, now_ts)
-    if len(bs) < 200:
-        return None
-    c = [b["c"] for b in bs]
-    last = bs[-1]
-    e20, e50 = ema(c[-100:], 20), ema(c[-200:], 50)
-    prior_low = min(b["l"] for b in bs[-13:-1])
-    if not (last["c"] < prior_low and last["c"] < e20 < e50):
-        return None
-    return {"signal_t": last["t"], "ref": last["c"], "stop": max(b["h"] for b in bs[-8:]), "side": -1, "rr": 1.5,
-            "why": "1h close %.2f under 12h low %.2f, EMA20 < EMA50, daily downtrend" % (last["c"], prior_low)}
-
-
-def stock_signal(sym, now_ts, ny):
-    bs = completed(bars(sym, "5m", "1d"), 300, now_ts)
-    day = ny.date()
-    def ny_min(b):
-        t = dt.datetime.fromtimestamp(b["t"], dt.timezone.utc)
-        d = ny_now(t)
-        return d.date(), d.hour * 60 + d.minute
-    today = [(ny_min(b)[1], b) for b in bs if ny_min(b)[0] == day]
-    rng = [b for m, b in today if hm("09:30") <= m < hm("09:45")]
-    after = [(m, b) for m, b in today if m >= hm("09:45")]
-    if len(rng) < 3 or not after:
-        return None
-    orh, orl = max(b["h"] for b in rng), min(b["l"] for b in rng)
-    trig = next(((m, b) for m, b in after if b["c"] > orh), None)
-    if not trig or trig[1]["t"] < after[-1][1]["t"] - 300:   # only a fresh breakout (last 2 bars)
-        return None
-    return {"signal_t": trig[1]["t"], "ref": trig[1]["c"], "stop": (orh + orl) / 2,
-            "why": "5m close %.2f above 15m opening-range high %.2f" % (trig[1]["c"], orh)}
+def selected_signal(now_ts):
+    """The validator's pick (validation/selection.json): one strategy on one market. The bot trades
+    nothing else; the strategy's own causal signal function decides, on completed hourly bars."""
+    if not os.path.exists(SELECTION):
+        return None, None
+    with open(SELECTION, encoding="utf-8") as fh:
+        pick = json.load(fh).get("pick")
+    if not pick:
+        return None, None
+    from quant import generator
+    st = next((s for s in generator.STRATEGIES if s["name"] == pick["strategy"]), None)
+    if st is None or generator.version(st) != pick["version"]:   # code changed since it was judged: blocked
+        print("  %s changed since validation: blocked" % pick["strategy"])
+        return pick, None
+    bs = completed(bars(pick["market"], "1h", "730d"), 3600, now_ts)
+    sig = st["fn"](bs, pick["params"])[-1] if len(bs) > 300 else None
+    if not sig:
+        return pick, None
+    side, stop, target = sig
+    return pick, {"signal_t": bs[-1]["t"], "side": side, "stop": stop, "target": target,
+                  "why": "%s %s (%s, %s) on the 1h close %.4f" % (pick["strategy"], json.dumps(pick["params"], sort_keys=True),
+                                                               pick["verdict"], pick["version"], bs[-1]["c"])}
 
 
 def try_entries(st, now_ts, ny, prices):
@@ -271,53 +215,41 @@ def try_entries(st, now_ts, ny, prices):
     if eq < st["day"]["start_equity"] * (1 - CFG["daily_loss_pct"]):
         print("  daily loss limit reached: no new entries today")
         return
-    candidates = [("crypto", s) for s in CFG["crypto"]] + [("crypto_short", s) for s in CFG["crypto_short"]]
-    minute = ny.hour * 60 + ny.minute
-    if stock_session_open(ny) and hm("09:50") <= minute <= hm(CFG["no_entries_after"]):
-        # No SPY trend filter: tested on 60 days x 15 symbols it changed nothing (-0.03R vs +0.02R).
-        candidates += [("stock", s) for s in CFG["stocks"]]
-    held = {p["sym"] for p in st["positions"]}
+    if len(st["positions"]) >= CFG["max_open"]:
+        return
     ov = {}
-    if os.path.exists(OVERRIDES):   # written by review.py every 2 hours
+    if os.path.exists(OVERRIDES):   # written by review.py after every 5 closed trades
         with open(OVERRIDES, encoding="utf-8") as fh:
             ov = json.load(fh)
-    candidates = [(m, s) for m, s in candidates if m not in ov.get("paused", [])]
-    for market, sym in candidates:
-        if len(st["positions"]) >= CFG["max_open"]:
-            break
-        if sym in held:
-            continue
-        try:
-            if market == "crypto":
-                sig = crypto_signal(sym, now_ts)
-            elif market == "crypto_short":
-                sig = crypto_short_signal(sym, now_ts)
-            else:
-                sig = stock_signal(sym, now_ts, ny)
-        except Exception as e:
-            print("  %s: no data (%s)" % (sym, e))
-            continue
-        if not sig or st["last_signal"].get(sym) == sig["signal_t"]:
-            continue
-        side = sig.get("side", 1)
-        price = bars(sym, "1m", "1d")[-1]["c"]          # fill at the latest price
-        risk_per_unit = (price - sig["stop"]) * side
-        if risk_per_unit <= 0:
-            continue
-        target = price + side * sig.get("rr", CFG["rr"]) * risk_per_unit
-        qty = (eq * CFG["risk_pct"] * ov.get("risk_scale", {}).get(market, 1.0)) / risk_per_unit
-        qty = min(qty, st["cash"] * 0.98 / price)        # no leverage
-        if qty * price < CFG["min_notional"]:
-            continue
-        st["cash"] -= qty * price
-        pos = {"sym": sym, "market": market, "side": side, "qty": round(qty, 8), "entry": price, "stop": round(sig["stop"], 6),
-               "target": round(target, 6), "entry_bar_t": int(now_ts) // 300 * 300, "opened": ny.strftime("%Y-%m-%d %H:%M ET"),
-               "why": sig["why"]}
-        st["positions"].append(pos)
-        st["last_signal"][sym] = sig["signal_t"]
-        prices[sym] = price
-        log({"event": "open", "sym": sym, "market": market, "qty": pos["qty"], "entry": round(price, 6),
-             "stop": pos["stop"], "target": pos["target"], "risk_usd": round(qty * risk_per_unit, 2), "why": sig["why"]})
+    try:
+        pick, sig = selected_signal(now_ts)
+    except Exception as e:
+        print("  selection: no data (%s)" % e)
+        return
+    if not pick or not sig:
+        return
+    sym, name = pick["market"], pick["strategy"]
+    if name in ov.get("paused", []) or sym in {p["sym"] for p in st["positions"]} or st["last_signal"].get(sym) == sig["signal_t"]:
+        return
+    side = sig["side"]
+    price = bars(sym, "1m", "1d")[-1]["c"]          # fill at the latest price
+    risk_per_unit = (price - sig["stop"]) * side
+    if risk_per_unit <= 0 or (sig["target"] - price) * side <= 0:   # price already past a level
+        return
+    qty = (eq * pick["risk_pct"] * ov.get("risk_scale", {}).get(name, 1.0)) / risk_per_unit
+    qty = min(qty, st["cash"] * 0.98 / price)        # no leverage
+    if qty * price < CFG["min_notional"]:
+        return
+    st["cash"] -= qty * price
+    pos = {"sym": sym, "market": name, "version": pick["version"], "verdict": pick["verdict"], "side": side,
+           "qty": round(qty, 8), "entry": price, "stop": round(sig["stop"], 6), "target": round(sig["target"], 6),
+           "entry_bar_t": int(now_ts) // 300 * 300, "expires": int(now_ts) + 48 * 3600,   # the validated max hold
+           "opened": ny.strftime("%Y-%m-%d %H:%M ET"), "why": sig["why"]}
+    st["positions"].append(pos)
+    st["last_signal"][sym] = sig["signal_t"]
+    prices[sym] = price
+    log({"event": "open", "sym": sym, "market": name, "side": side, "qty": pos["qty"], "entry": round(price, 6),
+         "stop": pos["stop"], "target": pos["target"], "risk_usd": round(qty * risk_per_unit, 2), "why": sig["why"]})
 
 
 # ---------------------------------------------------------------- commands

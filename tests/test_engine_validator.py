@@ -93,6 +93,20 @@ class ValidatorTest(unittest.TestCase):
         st["grid"] = st["grid"][:-1]
         self.assertNotEqual(v1, generator.version(st))
 
+    def test_bot_refuses_a_pick_whose_code_changed(self):
+        import bot
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "selection.json")
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump({"pick": {"strategy": "rsi_reversion", "version": "not-the-current-one", "market": "CL=F",
+                                    "params": {}, "verdict": "PROBATION", "risk_pct": 0.005}}, fh)
+            saved, bot.SELECTION = bot.SELECTION, path
+            try:
+                pick, sig = bot.selected_signal(0)   # returns before fetching any data
+            finally:
+                bot.SELECTION = saved
+        self.assertEqual((pick["market"], sig), ("CL=F", None))
+
     def test_generator_cannot_touch_validator_state(self):
         src = open(os.path.join(ROOT, "quant", "generator.py"), encoding="utf-8").read()
         self.assertIsNone(re.search(r"validat|criteria|selection\.json", src.split('"""', 2)[2]))
