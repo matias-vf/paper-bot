@@ -45,13 +45,13 @@
     }
   ],
   "day": {
-    "date": "2026-11-14",
-    "start_equity": 110.2036
+    "date": "2026-11-15",
+    "start_equity": 113.3847
   },
   "last_signal": {
     "MSFT": 1794581100,
     "ETH-USD": 1794686400
   },
-  "equity": 113.1239,
-  "updated": "2026-11-14 23:56 ET"
+  "equity": 113.3847,
+  "updated": "2026-11-15 00:54 ET"
 }
