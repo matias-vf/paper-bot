@@ -107,6 +107,25 @@ class ValidatorTest(unittest.TestCase):
                 bot.SELECTION = saved
         self.assertEqual((pick["market"], sig), ("CL=F", None))
 
+    def test_bot_falls_through_to_the_best_open_market(self):
+        import bot
+        cur = {s["name"]: generator.version(s) for s in generator.STRATEGIES}
+        rank = [{"strategy": "rsi_reversion", "version": cur["rsi_reversion"], "market": "CLOSED", "params": {}},
+                {"strategy": "breakdown_short", "version": cur["breakdown_short"], "market": "OPEN", "params": {"n": 12, "rr": 1.5}}]
+        now = 10_000_000
+        fake = {"CLOSED": walk(400), "OPEN": [dict(b, t=now - 3600 * (400 - i)) for i, b in enumerate(walk(400))]}
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "selection.json")
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump({"pick": rank[0], "ranking": rank}, fh)
+            saved = bot.SELECTION, bot.bars
+            bot.SELECTION, bot.bars = path, lambda sym, interval, rng: fake[sym]
+            try:
+                pick, _ = bot.selected_signal(now)
+            finally:
+                bot.SELECTION, bot.bars = saved
+        self.assertEqual(pick["market"], "OPEN")
+
     def test_generator_cannot_touch_validator_state(self):
         src = open(os.path.join(ROOT, "quant", "generator.py"), encoding="utf-8").read()
         self.assertIsNone(re.search(r"validat|criteria|selection\.json", src.split('"""', 2)[2]))

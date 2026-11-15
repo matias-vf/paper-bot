@@ -184,20 +184,30 @@ SELECTION = os.path.join(HERE, "validation", "selection.json")
 
 
 def selected_signal(now_ts):
-    """The validator's pick (validation/selection.json): one strategy on one market. The bot trades
-    nothing else; the strategy's own causal signal function decides, on completed hourly bars."""
+    """The validator's ranking (validation/selection.json), best first: the bot trades the first
+    strategy whose market is open now (a completed hourly bar in the last 2 hours), so a weekend
+    with oil closed falls through to the best open market. Nothing outside the ranking is traded;
+    the strategy's own causal signal function decides, on completed hourly bars."""
     if not os.path.exists(SELECTION):
         return None, None
     with open(SELECTION, encoding="utf-8") as fh:
-        pick = json.load(fh).get("pick")
-    if not pick:
+        sel = json.load(fh)
+    ranking = sel.get("ranking") or ([sel["pick"]] if sel.get("pick") else [])
+    if not ranking or not sel.get("pick"):      # no pick = validator log broken or nothing tradeable
         return None, None
     from quant import generator
-    st = next((s for s in generator.STRATEGIES if s["name"] == pick["strategy"]), None)
-    if st is None or generator.version(st) != pick["version"]:   # code changed since it was judged: blocked
-        print("  %s changed since validation: blocked" % pick["strategy"])
-        return pick, None
-    bs = completed(bars(pick["market"], "1h", "730d"), 3600, now_ts)
+    for pick in ranking:
+        st = next((s for s in generator.STRATEGIES if s["name"] == pick["strategy"]), None)
+        if st is None or generator.version(st) != pick["version"]:   # code changed since it was judged: blocked
+            print("  %s changed since validation: blocked" % pick["strategy"])
+            continue
+        bs = completed(bars(pick["market"], "1h", "730d"), 3600, now_ts)
+        if not bs or now_ts - bs[-1]["t"] > 3 * 3600:    # last bar started over 3 h ago: market closed
+            print("  %s %s: market closed, next in the ranking" % (pick["strategy"], pick["market"]))
+            continue
+        break
+    else:
+        return ranking[0], None
     sig = st["fn"](bs, pick["params"])[-1] if len(bs) > 300 else None
     if not sig:
         return pick, None
