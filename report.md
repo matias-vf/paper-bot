@@ -1,12 +1,12 @@
 # Paper bot report
 
-Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-17 08:07 ET.
+Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-17 09:55 ET.
 
 | | |
 | --- | --- |
 | Start | 110.00 USD |
-| Equity | 112.99 USD (+2.7%) |
-| Cash | 77.58 USD |
+| Equity | 113.33 USD (+3.0%) |
+| Cash | 8.72 USD |
 | Closed trades | 2 (2 won) |
 
 ## Open
@@ -14,6 +14,7 @@ Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-17 0
 | symbol | market | qty | entry | stop | target | opened | why |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ETH-USD | crypto_short | 0.0202614 | 1786.2300 | 1898.5300 | 1617.7799 | 2026-11-14 16:39 ET | 1h close 1782.77 under 12h low 1810.80, EMA20 < EMA50, daily downtrend |
+| CL=F | rsi_reversion | 0.790416 | 87.1100 | 87.8269 | 86.4487 | 2026-11-17 09:55 ET | rsi_reversion {"low": 10, "rsi_n": 5, "stop_atr": 1.5} (PROBATION, 4e672ec6161b23e5) on the 1h close 87.0000 |
 
 ## Closed
 
