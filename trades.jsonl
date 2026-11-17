@@ -4,3 +4,4 @@
 {"event": "close", "sym": "ETH-USD", "exit": 1794.124817, "why": "target", "pnl": 3.3136, "at": "2026-11-14 21:39:31Z"}
 {"event": "open", "sym": "ETH-USD", "market": "crypto_short", "qty": 0.02026144, "entry": 1786.22998, "stop": 1898.530029, "target": 1617.779907, "risk_usd": 2.28, "why": "1h close 1782.77 under 12h low 1810.80, EMA20 < EMA50, daily downtrend", "at": "2026-11-14 21:39:32Z"}
 {"event": "open", "sym": "CL=F", "market": "rsi_reversion", "side": -1, "qty": 0.7904164, "entry": 87.110001, "stop": 87.826902, "target": 86.448732, "risk_usd": 0.57, "why": "rsi_reversion {\"low\": 10, \"rsi_n\": 5, \"stop_atr\": 1.5} (PROBATION, 4e672ec6161b23e5) on the 1h close 87.0000", "at": "2026-11-17 14:55:51Z"}
+{"event": "close", "sym": "CL=F", "exit": 86.448732, "why": "target", "pnl": 0.5227, "at": "2026-11-17 15:41:16Z"}

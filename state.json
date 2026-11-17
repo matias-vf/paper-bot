@@ -1,5 +1,5 @@
 {
-  "cash": 8.723273853176863,
+  "cash": 78.09912449403583,
   "positions": [
     {
       "sym": "ETH-USD",
@@ -12,21 +12,6 @@
       "entry_bar_t": 1794692100,
       "opened": "2026-11-14 16:39 ET",
       "why": "1h close 1782.77 under 12h low 1810.80, EMA20 < EMA50, daily downtrend"
-    },
-    {
-      "sym": "CL=F",
-      "market": "rsi_reversion",
-      "version": "4e672ec6161b23e5",
-      "verdict": "PROBATION",
-      "side": -1,
-      "qty": 0.7904164,
-      "entry": 87.11000061035156,
-      "stop": 87.826902,
-      "target": 86.448732,
-      "entry_bar_t": 1794927300,
-      "expires": 1795100149,
-      "opened": "2026-11-17 09:55 ET",
-      "why": "rsi_reversion {\"low\": 10, \"rsi_n\": 5, \"stop_atr\": 1.5} (PROBATION, 4e672ec6161b23e5) on the 1h close 87.0000"
     }
   ],
   "closed": [
@@ -57,6 +42,24 @@
       "exit": 1794.124817,
       "exit_why": "target",
       "pnl": 3.3136
+    },
+    {
+      "sym": "CL=F",
+      "market": "rsi_reversion",
+      "version": "4e672ec6161b23e5",
+      "verdict": "PROBATION",
+      "side": -1,
+      "qty": 0.7904164,
+      "entry": 87.11000061035156,
+      "stop": 87.826902,
+      "target": 86.448732,
+      "entry_bar_t": 1794927300,
+      "expires": 1795100149,
+      "opened": "2026-11-17 09:55 ET",
+      "why": "rsi_reversion {\"low\": 10, \"rsi_n\": 5, \"stop_atr\": 1.5} (PROBATION, 4e672ec6161b23e5) on the 1h close 87.0000",
+      "exit": 86.448732,
+      "exit_why": "target",
+      "pnl": 0.5227
     }
   ],
   "day": {
@@ -68,6 +71,6 @@
     "ETH-USD": 1794686400,
     "CL=F": 1794920400
   },
-  "equity": 113.9862,
-  "updated": "2026-11-17 10:36 ET"
+  "equity": 114.1908,
+  "updated": "2026-11-17 10:41 ET"
 }
