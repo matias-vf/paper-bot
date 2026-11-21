@@ -1,19 +1,6 @@
 {
-  "cash": 78.09912449403583,
-  "positions": [
-    {
-      "sym": "ETH-USD",
-      "market": "crypto_short",
-      "side": -1,
-      "qty": 0.02026144,
-      "entry": 1786.22998046875,
-      "stop": 1898.530029,
-      "target": 1617.779907,
-      "entry_bar_t": 1794692100,
-      "opened": "2026-11-14 16:39 ET",
-      "why": "1h close 1782.77 under 12h low 1810.80, EMA20 < EMA50, daily downtrend"
-    }
-  ],
+  "cash": 117.70375712608725,
+  "positions": [],
   "closed": [
     {
       "sym": "MSFT",
@@ -60,17 +47,32 @@
       "exit": 86.448732,
       "exit_why": "target",
       "pnl": 0.5227
+    },
+    {
+      "sym": "ETH-USD",
+      "market": "crypto_short",
+      "side": -1,
+      "qty": 0.02026144,
+      "entry": 1786.22998046875,
+      "stop": 1898.530029,
+      "target": 1617.779907,
+      "entry_bar_t": 1794692100,
+      "opened": "2026-11-14 16:39 ET",
+      "why": "1h close 1782.77 under 12h low 1810.80, EMA20 < EMA50, daily downtrend",
+      "exit": 1617.779907,
+      "exit_why": "target",
+      "pnl": 3.413
     }
   ],
   "day": {
-    "date": "2026-11-19",
-    "start_equity": 114.0152
+    "date": "2026-11-21",
+    "start_equity": 117.7038
   },
   "last_signal": {
     "MSFT": 1794581100,
     "ETH-USD": 1794686400,
     "CL=F": 1794920400
   },
-  "equity": 114.8609,
-  "updated": "2026-11-19 15:39 ET"
+  "equity": 117.7038,
+  "updated": "2026-11-21 16:33 ET"
 }
