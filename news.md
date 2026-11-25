@@ -15,8 +15,8 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-25 14:21 UTC, MT Newswires: [Sector Update: Energy Stocks Lean Lower Pre-Bell Wednesday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-lean-lower-142158117.html)
 - 11-25 14:07 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-140751314.html)
 - 11-25 12:14 UTC, Simply Wall St.: [Why Chevron Investors Could Make Sense Of ETFs Now](https://finance.yahoo.com/energy/articles/why-chevron-investors-could-sense-121452095.html)
+- 11-25 10:37 UTC, Barchart: [Do Wall Street Analysts Like Expand Energy Stock?](https://finance.yahoo.com/energy/articles/wall-street-analysts-expand-energy-103712136.html)
 - 11-24 20:59 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-afternoon-205928199.html)
-- 11-24 20:38 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203820543.html)
 
 ## BTC-USD
 
