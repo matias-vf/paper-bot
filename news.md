@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 16:43 UTC, Investor's Business Daily: [Stock Market Today: Dow Falls 700 Points, Nasdaq Off 4%; Nutanix Dives On CEO Exit (Live Coverage)](https://finance.yahoo.com/m/90407e46-3b17-34e8-8c82-527bf00b63e4/stock-market-today%3A-dow-falls.html)
 - 11-25 16:19 UTC, Reuters: [BoE's Bailey sees lower inflation peak if energy prices stabilise](https://finance.yahoo.com/economy/policy/articles/boes-bailey-sees-lower-inflation-145706525.html)
 - 11-25 15:46 UTC, Barrons.com: [The Manager of the World’s Largest Sovereign Wealth Fund on AI, Government Bonds, Real Estate](https://finance.yahoo.com/m/fac7f987-6b68-326d-97c5-2bcd84e6bc96/the-manager-of-the-world%E2%80%99s.html)
 - 11-25 15:42 UTC, Oilprice.com: [Oil Inventories Continue to Rise in the US](https://finance.yahoo.com/energy/articles/oil-inventories-continue-rise-us-154256636.html)
 - 11-25 15:41 UTC, TIKR: [Bad News for Exxon and Chevron: Goldman Sees Brent Falling “Roughly $10” Next Year on a Supply Glut](https://finance.yahoo.com/energy/articles/bad-news-exxon-chevron-goldman-154156323.html)
-- 11-25 15:41 UTC, Investor's Business Daily: [Stock Market Today: Dow Slammed 800 Points; Dell Falls Hard Despite Big Earnings (Live Coverage)](https://finance.yahoo.com/m/90407e46-3b17-34e8-8c82-527bf00b63e4/stock-market-today%3A-dow.html)
 
 ## XLE
 
