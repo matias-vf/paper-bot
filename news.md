@@ -14,9 +14,9 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 - 11-25 18:49 UTC, Reuters: [Analysis-Venezuela data deluge cheers investors, but $237 billion debt test lies ahead](https://finance.yahoo.com/economy/policy/articles/analysis-venezuela-data-deluge-cheers-153526128.html)
 - 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
+- 11-25 18:45 UTC, GuruFocus.com: [ProFrac (ACDC) Stock Is Up 11.8% Today as Oil Rises, Oilfield Peers Gain](https://finance.yahoo.com/markets/stocks/articles/profrac-acdc-stock-11-8-184533129.html)
 - 11-25 18:17 UTC, Investor's Business Daily: [Stock Market Today: Dow Cuts Loss Of 1,100 Points, Equal-Weighted S&P 500 Fund Up (Live Coverage)](https://finance.yahoo.com/m/90407e46-3b17-34e8-8c82-527bf00b63e4/stock-market-today%3A-dow-cuts.html)
 - 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
-- 11-25 18:16 UTC, MT Newswires: [US Dollar Weakens Against Canada's Loonie; Treasury Yields And Gold Fall](https://finance.yahoo.com/markets/currencies/articles/us-dollar-weakens-against-canada-181620276.html)
 
 ## XLE
 
