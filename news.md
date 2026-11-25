@@ -12,11 +12,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 19:30 UTC, GlobeNewswire: [Pyrolysis Oil Market to Hit USD 4.33 Billion by 2032 as Chemical Manufacturing Investments Drive Demand Across Asia-Pacific - Mordor Intelligence](https://finance.yahoo.com/energy/articles/pyrolysis-oil-market-hit-usd-193000437.html)
+- 11-25 19:15 UTC, GuruFocus.com: [EQT (EQT) Stock Is Up 4.8% Today as Energy Stocks Rally](https://finance.yahoo.com/energy/articles/eqt-eqt-stock-4-8-191517165.html)
 - 11-25 18:49 UTC, Reuters: [Analysis-Venezuela data deluge cheers investors, but $237 billion debt test lies ahead](https://finance.yahoo.com/economy/policy/articles/analysis-venezuela-data-deluge-cheers-153526128.html)
 - 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
 - 11-25 18:45 UTC, GuruFocus.com: [ProFrac (ACDC) Stock Is Up 11.8% Today as Oil Rises, Oilfield Peers Gain](https://finance.yahoo.com/markets/stocks/articles/profrac-acdc-stock-11-8-184533129.html)
-- 11-25 18:41 UTC, The Wall Street Journal: [Dodgers Owner Todd Boehly Clinches Deal for Overseas Assets of Russia’s Lukoil](https://finance.yahoo.com/m/4f237c59-f567-3a22-bd40-8dd75ff2af1a/dodgers-owner-todd-boehly.html)
-- 11-25 18:17 UTC, Investor's Business Daily: [Stock Market Today: Dow Cuts Loss Of 1,100 Points, Equal-Weighted S&P 500 Fund Up (Live Coverage)](https://finance.yahoo.com/m/90407e46-3b17-34e8-8c82-527bf00b63e4/stock-market-today%3A-dow-cuts.html)
 
 ## XLE
 
