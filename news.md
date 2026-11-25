@@ -16,7 +16,7 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
 - 11-25 18:16 UTC, MT Newswires: [US Dollar Weakens Against Canada's Loonie; Treasury Yields And Gold Fall](https://finance.yahoo.com/markets/currencies/articles/us-dollar-weakens-against-canada-181620276.html)
 - 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
-- 11-25 17:32 UTC, The Wall Street Journal: [Energy & Utilities Roundup: Market Talk](https://finance.yahoo.com/m/f2574464-d7e1-3a4c-9bba-0c9997454a77/energy-%26-utilities-roundup%3A.html)
+- 11-25 18:05 UTC, CNN Business: [Russian oil firm Lukoil’s overseas assets sold to investors led by US billionaire Todd Boehly](https://finance.yahoo.com/energy/articles/russian-oil-firm-lukoil-overseas-180549091.html)
 
 ## XLE
 
