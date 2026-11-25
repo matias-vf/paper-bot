@@ -30,6 +30,6 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 - 11-25 22:26 UTC, Motley Fool: [Crypto Market Today, Nov. 25: Bitcoin, Ethereum, and Solana as Short Liquidations Fuel Fragile Rebound](https://finance.yahoo.com/markets/crypto/articles/crypto-market-today-nov-25-222619217.html)
 - 11-25 08:05 UTC, Cryptonews: [LIVE – Crypto News Today: Bitcoin Hit by Trump Tariff Threat and US Treasury Cyberattack as IBIT Bleeds Billions](https://finance.yahoo.com/markets/crypto/articles/live-crypto-news-today-bitcoin-080523882.html)
-- 11-25 06:49 UTC, Investing.com: [Bitcoin slides toward worst month since 2022 as ETF outflows, Fed hike bets bite](https://finance.yahoo.com/markets/crypto/articles/bitcoin-extends-losses-below-59-064934005.html)
+- 11-25 06:49 UTC, Investing.com: [Bitcoin recovers after hit from ETF outflows, AI rout, and hot U.S. economic data](https://finance.yahoo.com/markets/crypto/articles/bitcoin-extends-losses-below-59-064934005.html)
 - 11-24 14:24 UTC, CryptoProwl: [Bitcoin ETF Outflows Hit A Record $4.71 Billion](https://finance.yahoo.com/markets/crypto/articles/bitcoin-etf-outflows-hit-record-142400753.html)
 - 11-24 10:31 UTC, Cryptonews: [Bitcoin ETF Loses $570M: More Than Half of BTC Supply Falls Out of Profit](https://finance.yahoo.com/markets/crypto/articles/bitcoin-etf-loses-570m-more-103111151.html)
