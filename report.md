@@ -1,18 +1,19 @@
 # Paper bot report
 
-Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-25 11:59 ET.
+Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-25 12:01 ET.
 
 | | |
 | --- | --- |
 | Start | 110.00 USD |
 | Equity | 117.70 USD (+7.0%) |
-| Cash | 117.70 USD |
+| Cash | 2.35 USD |
 | Closed trades | 4 (4 won) |
 
 ## Open
 
 | symbol | market | qty | entry | stop | target | opened | why |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| EURUSD=X | rsi_reversion | 105.003 | 1.0985 | 1.1019 | 1.0969 | 2026-11-25 12:01 ET | rsi_reversion {"low": 30, "rsi_n": 14, "stop_atr": 3} (PROBATION, 4e672ec6161b23e5) on the 1h close 1.0982 |
 
 ## Closed
 

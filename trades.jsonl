@@ -6,3 +6,4 @@
 {"event": "open", "sym": "CL=F", "market": "rsi_reversion", "side": -1, "qty": 0.7904164, "entry": 87.110001, "stop": 87.826902, "target": 86.448732, "risk_usd": 0.57, "why": "rsi_reversion {\"low\": 10, \"rsi_n\": 5, \"stop_atr\": 1.5} (PROBATION, 4e672ec6161b23e5) on the 1h close 87.0000", "at": "2026-11-17 14:55:51Z"}
 {"event": "close", "sym": "CL=F", "exit": 86.448732, "why": "target", "pnl": 0.5227, "at": "2026-11-17 15:41:16Z"}
 {"event": "close", "sym": "ETH-USD", "exit": 1617.779907, "why": "target", "pnl": 3.413, "at": "2026-11-21 21:33:09Z"}
+{"event": "open", "sym": "EURUSD=X", "market": "rsi_reversion", "side": -1, "qty": 105.00282197, "entry": 1.098539, "stop": 1.101873, "target": 1.096945, "risk_usd": 0.35, "why": "rsi_reversion {\"low\": 30, \"rsi_n\": 14, \"stop_atr\": 3} (PROBATION, 4e672ec6161b23e5) on the 1h close 1.0982", "at": "2026-11-25 17:01:44Z"}

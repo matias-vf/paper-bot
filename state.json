@@ -1,6 +1,22 @@
 {
-  "cash": 117.70375712608725,
-  "positions": [],
+  "cash": 2.3540751425217508,
+  "positions": [
+    {
+      "sym": "EURUSD=X",
+      "market": "rsi_reversion",
+      "version": "4e672ec6161b23e5",
+      "verdict": "PROBATION",
+      "side": -1,
+      "qty": 105.00282197,
+      "entry": 1.098538875579834,
+      "stop": 1.101873,
+      "target": 1.096945,
+      "entry_bar_t": 1795626000,
+      "expires": 1795798903,
+      "opened": "2026-11-25 12:01 ET",
+      "why": "rsi_reversion {\"low\": 30, \"rsi_n\": 14, \"stop_atr\": 3} (PROBATION, 4e672ec6161b23e5) on the 1h close 1.0982"
+    }
+  ],
   "closed": [
     {
       "sym": "MSFT",
@@ -71,8 +87,9 @@
   "last_signal": {
     "MSFT": 1794581100,
     "ETH-USD": 1794686400,
-    "CL=F": 1794920400
+    "CL=F": 1794920400,
+    "EURUSD=X": 1795622400
   },
   "equity": 117.7038,
-  "updated": "2026-11-25 11:59 ET"
+  "updated": "2026-11-25 12:01 ET"
 }
