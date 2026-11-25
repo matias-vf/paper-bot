@@ -12,11 +12,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 22:09 UTC, The Wall Street Journal: [Crude Posts Back-to-Back Gains on Middle East Tension](https://finance.yahoo.com/m/0205a820-8bf4-3021-b041-620ef11e50b2/crude-posts-back-to-back.html)
+- 11-25 22:03 UTC, The Wall Street Journal: [Energy & Utilities Roundup: Market Talk](https://finance.yahoo.com/m/f2574464-d7e1-3a4c-9bba-0c9997454a77/energy-%26-utilities-roundup%3A.html)
 - 11-25 21:33 UTC, MT Newswires: [US Equity Markets Mixed Amid US Plans for New Tariffs on China, Europe](https://finance.yahoo.com/economy/policy/articles/us-equity-markets-mixed-amid-213322374.html)
 - 11-25 21:29 UTC, MT Newswires: [TSX Closer: Index Rebounds From Tuesday's Losses as Base Metals And Energy Stocks Advance](https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-rebounds-tuesday-212956748.html)
 - 11-25 21:07 UTC, The Wall Street Journal: [Oil Futures Pick Up as Middle East Tensions Persist](https://finance.yahoo.com/m/6315b182-a0b7-3674-84d6-efcd68443f9c/oil-futures-pick-up-as-middle.html)
-- 11-25 21:06 UTC, Oilprice.com: [U.S. Rig Count Holds Steady as Oil Production Hits Fifth Straight Record](https://finance.yahoo.com/energy/articles/u-rig-count-holds-steady-210652185.html)
-- 11-25 20:56 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-205633406.html)
 
 ## XLE
 
