@@ -12,11 +12,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 20:52 UTC, Oilprice.com: [Brazil's 220,000-Bpd Bacalhau Oil Field Hit by Major Production Outage](https://finance.yahoo.com/energy/articles/brazils-220-000-bpd-bacalhau-205200049.html)
 - 11-25 20:33 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203348957.html)
 - 11-25 20:00 UTC, Associated Press: [BC-OILS](https://finance.yahoo.com/markets/commodities/articles/bc-oils-200019169.html)
 - 11-25 19:30 UTC, GlobeNewswire: [Pyrolysis Oil Market to Hit USD 4.33 Billion by 2032 as Chemical Manufacturing Investments Drive Demand Across Asia-Pacific - Mordor Intelligence](https://finance.yahoo.com/energy/articles/pyrolysis-oil-market-hit-usd-193000437.html)
 - 11-25 19:15 UTC, GuruFocus.com: [EQT (EQT) Stock Is Up 4.8% Today as Energy Stocks Rally](https://finance.yahoo.com/energy/articles/eqt-eqt-stock-4-8-191517165.html)
-- 11-25 18:49 UTC, Reuters: [Analysis-Venezuela data deluge cheers investors, but $237 billion debt test lies ahead](https://finance.yahoo.com/economy/policy/articles/analysis-venezuela-data-deluge-cheers-153526128.html)
 
 ## XLE
 
