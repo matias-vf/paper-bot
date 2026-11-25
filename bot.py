@@ -183,38 +183,37 @@ def manage(st, now_ts, ny, prices):
 SELECTION = os.path.join(HERE, "validation", "selection.json")
 
 
-def selected_signal(now_ts):
-    """The validator's ranking (validation/selection.json), best first: the bot trades the first
-    strategy whose market is open now (a completed hourly bar in the last 2 hours), so a weekend
-    with oil closed falls through to the best open market. Nothing outside the ranking is traded;
-    the strategy's own causal signal function decides, on completed hourly bars."""
+def signals(now_ts):
+    """Yields (pick, signal) for every strategy in the validator's ranking (validation/selection.json,
+    best first) whose market is open now (a completed hourly bar in the last 3 hours) and whose causal
+    signal function fires on the latest completed bar. A closed or silent market never hides the
+    next one. Nothing outside the ranking is traded."""
     if not os.path.exists(SELECTION):
-        return None, None
+        return
     with open(SELECTION, encoding="utf-8") as fh:
         sel = json.load(fh)
-    ranking = sel.get("ranking") or ([sel["pick"]] if sel.get("pick") else [])
-    if not ranking or not sel.get("pick"):      # no pick = validator log broken or nothing tradeable
-        return None, None
+    if not sel.get("pick"):      # no pick = validator log broken or nothing tradeable
+        return
     from quant import generator
-    for pick in ranking:
+    for pick in sel.get("ranking") or [sel["pick"]]:
         st = next((s for s in generator.STRATEGIES if s["name"] == pick["strategy"]), None)
         if st is None or generator.version(st) != pick["version"]:   # code changed since it was judged: blocked
             print("  %s changed since validation: blocked" % pick["strategy"])
             continue
-        bs = completed(bars(pick["market"], "1h", "730d"), 3600, now_ts)
-        if not bs or now_ts - bs[-1]["t"] > 3 * 3600:    # last bar started over 3 h ago: market closed
-            print("  %s %s: market closed, next in the ranking" % (pick["strategy"], pick["market"]))
+        try:
+            bs = completed(bars(pick["market"], "1h", "730d"), 3600, now_ts)
+        except Exception as e:                               # one failed download must not hide the rest
+            print("  %s: no data (%s)" % (pick["market"], e))
             continue
-        break
-    else:
-        return ranking[0], None
-    sig = st["fn"](bs, pick["params"])[-1] if len(bs) > 300 else None
-    if not sig:
-        return pick, None
-    side, stop, target = sig
-    return pick, {"signal_t": bs[-1]["t"], "side": side, "stop": stop, "target": target,
-                  "why": "%s %s (%s, %s) on the 1h close %.4f" % (pick["strategy"], json.dumps(pick["params"], sort_keys=True),
-                                                               pick["verdict"], pick["version"], bs[-1]["c"])}
+        if not bs or now_ts - bs[-1]["t"] > 3 * 3600:        # last bar started over 3 h ago: market closed
+            print("  %s %s: market closed" % (pick["strategy"], pick["market"]))
+            continue
+        sig = st["fn"](bs, pick["params"])[-1] if len(bs) > 300 else None
+        if sig:
+            side, stop, target = sig
+            yield pick, {"signal_t": bs[-1]["t"], "side": side, "stop": stop, "target": target,
+                         "why": "%s %s (%s, %s) on the 1h close %.4f" % (pick["strategy"], json.dumps(pick["params"], sort_keys=True),
+                                                                      pick["verdict"], pick["version"], bs[-1]["c"])}
 
 
 def try_entries(st, now_ts, ny, prices):
@@ -231,35 +230,31 @@ def try_entries(st, now_ts, ny, prices):
     if os.path.exists(OVERRIDES):   # written by review.py after every 5 closed trades
         with open(OVERRIDES, encoding="utf-8") as fh:
             ov = json.load(fh)
-    try:
-        pick, sig = selected_signal(now_ts)
-    except Exception as e:
-        print("  selection: no data (%s)" % e)
-        return
-    if not pick or not sig:
-        return
-    sym, name = pick["market"], pick["strategy"]
-    if name in ov.get("paused", []) or sym in {p["sym"] for p in st["positions"]} or st["last_signal"].get(sym) == sig["signal_t"]:
-        return
-    side = sig["side"]
-    price = bars(sym, "1m", "1d")[-1]["c"]          # fill at the latest price
-    risk_per_unit = (price - sig["stop"]) * side
-    if risk_per_unit <= 0 or (sig["target"] - price) * side <= 0:   # price already past a level
-        return
-    qty = (eq * pick["risk_pct"] * ov.get("risk_scale", {}).get(name, 1.0)) / risk_per_unit
-    qty = min(qty, st["cash"] * 0.98 / price)        # no leverage
-    if qty * price < CFG["min_notional"]:
-        return
-    st["cash"] -= qty * price
-    pos = {"sym": sym, "market": name, "version": pick["version"], "verdict": pick["verdict"], "side": side,
-           "qty": round(qty, 8), "entry": price, "stop": round(sig["stop"], 6), "target": round(sig["target"], 6),
-           "entry_bar_t": int(now_ts) // 300 * 300, "expires": int(now_ts) + 48 * 3600,   # the validated max hold
-           "opened": ny.strftime("%Y-%m-%d %H:%M ET"), "why": sig["why"]}
-    st["positions"].append(pos)
-    st["last_signal"][sym] = sig["signal_t"]
-    prices[sym] = price
-    log({"event": "open", "sym": sym, "market": name, "side": side, "qty": pos["qty"], "entry": round(price, 6),
-         "stop": pos["stop"], "target": pos["target"], "risk_usd": round(qty * risk_per_unit, 2), "why": sig["why"]})
+    for pick, sig in signals(now_ts):                # best-ranked first; the first one that can be taken is taken
+        sym, name = pick["market"], pick["strategy"]
+        if name in ov.get("paused", []) or sym in {p["sym"] for p in st["positions"]} or st["last_signal"].get(sym) == sig["signal_t"]:
+            continue
+        side = sig["side"]
+        price = bars(sym, "1m", "1d")[-1]["c"]          # fill at the latest price
+        risk_per_unit = (price - sig["stop"]) * side
+        if risk_per_unit <= 0 or (sig["target"] - price) * side <= 0:   # price already past a level
+            continue
+        qty = (eq * pick["risk_pct"] * ov.get("risk_scale", {}).get(name, 1.0)) / risk_per_unit
+        qty = min(qty, st["cash"] * 0.98 / price)        # no leverage
+        if qty * price < CFG["min_notional"]:
+            continue
+        st["cash"] -= qty * price
+        pos = {"sym": sym, "market": name, "version": pick["version"], "verdict": pick["verdict"], "side": side,
+               "qty": round(qty, 8), "entry": price, "stop": round(sig["stop"], 6), "target": round(sig["target"], 6),
+               "entry_bar_t": int(now_ts) // 300 * 300, "expires": int(now_ts) + 48 * 3600,   # the validated max hold
+               "opened": ny.strftime("%Y-%m-%d %H:%M ET"), "why": sig["why"]}
+        st["positions"].append(pos)
+        st["last_signal"][sym] = sig["signal_t"]
+        prices[sym] = price
+        log({"event": "open", "sym": sym, "market": name, "side": side, "qty": pos["qty"], "entry": round(price, 6),
+             "stop": pos["stop"], "target": pos["target"], "risk_usd": round(qty * risk_per_unit, 2), "why": sig["why"]})
+        if len(st["positions"]) >= CFG["max_open"]:
+            break
 
 
 # ---------------------------------------------------------------- commands

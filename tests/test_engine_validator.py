@@ -102,29 +102,33 @@ class ValidatorTest(unittest.TestCase):
                                     "params": {}, "verdict": "PROBATION", "risk_pct": 0.005}}, fh)
             saved, bot.SELECTION = bot.SELECTION, path
             try:
-                pick, sig = bot.selected_signal(0)   # returns before fetching any data
+                self.assertEqual(list(bot.signals(0)), [])   # blocked before fetching any data
             finally:
                 bot.SELECTION = saved
-        self.assertEqual((pick["market"], sig), ("CL=F", None))
 
-    def test_bot_falls_through_to_the_best_open_market(self):
+    def test_bot_scans_the_whole_ranking_not_just_the_first_open_market(self):
         import bot
-        cur = {s["name"]: generator.version(s) for s in generator.STRATEGIES}
-        rank = [{"strategy": "rsi_reversion", "version": cur["rsi_reversion"], "market": "CLOSED", "params": {}},
-                {"strategy": "breakdown_short", "version": cur["breakdown_short"], "market": "OPEN", "params": {"n": 12, "rr": 1.5}}]
         now = 10_000_000
-        fake = {"CLOSED": walk(400), "OPEN": [dict(b, t=now - 3600 * (400 - i)) for i, b in enumerate(walk(400))]}
+        fresh = [dict(b, t=now - 3600 * (400 - i)) for i, b in enumerate(walk(400))]
+        fake = {"CLOSED": walk(400), "SILENT": fresh, "FIRES": fresh}     # CLOSED's bars are years old
+        fire = lambda bs, p: [None] * (len(bs) - 1) + [(-1, bs[-1]["c"] * 1.01, bs[-1]["c"] * 0.98)]
+        silent = lambda bs, p: [None] * len(bs)
+        stubs = [{"name": "fire", "fn": fire}, {"name": "silent", "fn": silent}]
+        rank = [{"strategy": "fire", "version": "v", "market": "CLOSED", "params": {}, "verdict": "APPROVED"},
+                {"strategy": "silent", "version": "v", "market": "SILENT", "params": {}, "verdict": "APPROVED"},
+                {"strategy": "fire", "version": "v", "market": "FIRES", "params": {}, "verdict": "PROBATION"}]
         with tempfile.TemporaryDirectory() as d:
             path = os.path.join(d, "selection.json")
             with open(path, "w", encoding="utf-8") as fh:
                 json.dump({"pick": rank[0], "ranking": rank}, fh)
-            saved = bot.SELECTION, bot.bars
+            saved = bot.SELECTION, bot.bars, generator.STRATEGIES, generator.version
             bot.SELECTION, bot.bars = path, lambda sym, interval, rng: fake[sym]
+            generator.STRATEGIES, generator.version = stubs, lambda st: "v"
             try:
-                pick, _ = bot.selected_signal(now)
+                got = [p["market"] for p, _ in bot.signals(now)]
             finally:
-                bot.SELECTION, bot.bars = saved
-        self.assertEqual(pick["market"], "OPEN")
+                bot.SELECTION, bot.bars, generator.STRATEGIES, generator.version = saved
+        self.assertEqual(got, ["FIRES"])
 
     def test_generator_cannot_touch_validator_state(self):
         src = open(os.path.join(ROOT, "quant", "generator.py"), encoding="utf-8").read()
