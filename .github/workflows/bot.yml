@@ -1,8 +1,6 @@
 # Runs the paper bot on GitHub's servers, so it keeps going with your PC off.
-# Every hour GitHub starts a run (best effort: it can be late or skipped):
-#   - during the US session (weekdays 14:00-20:59 UTC) the run ticks every 5 minutes until 21:00 UTC;
-#   - otherwise it ticks once (the validator's pick uses hourly bars).
-# "Run workflow" by hand starts a run that ticks every 5 minutes for 5.5 hours, day or night.
+# Every hour GitHub starts a run (best effort: it can be late or skipped). Each run ticks every
+# 2 minutes for 5.5 hours, so exits are watched closely; the strategies themselves decide on hourly bars.
 name: paper-bot
 on:
   schedule:
@@ -30,13 +28,11 @@ jobs:
             git pull -q --rebase origin main || true
             python bot.py tick || echo "tick failed"
             python review.py --every-trades 5 || echo "review failed"   # reviews after every 5 closed trades
-            git add state.json trades.jsonl report.md review.md overrides.json
+            git add state.json trades.jsonl report.md review.md overrides.json news.md
             git diff --cached --quiet || git commit -q -m "bot tick $(date -u +%H:%M)"
             git push -q origin HEAD:main || echo "push failed"
           }
-          in_session() { [ "$(date -u +%u)" -le 5 ] && [ "$(date -u +%H)" -ge 14 ] && [ "$(date -u +%H)" -lt 21 ]; }
-          # a run started by hand loops for 5.5 h whatever the hour (GitHub's hourly schedule can stall)
+          # every run loops for 5.5 h, a tick every 2 minutes, day or night; the hourly schedule restarts it
           START=$(date +%s)
-          manual() { [ "$GITHUB_EVENT_NAME" = workflow_dispatch ] && [ $(( $(date +%s) - START )) -lt 19800 ]; }
           tick
-          while in_session || manual; do sleep 300; tick; done
+          while [ $(( $(date +%s) - START )) -lt 19800 ]; do sleep 120; tick; done

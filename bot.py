@@ -23,12 +23,14 @@ import json
 import os
 import sys
 import time
+import urllib.parse
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "state.json")
 TRADES = os.path.join(HERE, "trades.jsonl")
 REPORT = os.path.join(HERE, "report.md")
+NEWS = os.path.join(HERE, "news.md")
 OVERRIDES = os.path.join(HERE, "overrides.json")
 
 CFG = {
@@ -271,6 +273,10 @@ def tick():
     st["updated"] = ny.strftime("%Y-%m-%d %H:%M ET")
     save(st)
     report(st)
+    try:
+        news(st)
+    except Exception as e:   # news must never break a tick
+        print("  news failed: %s" % e)
     print("equity %.2f USD (start %.2f), cash %.2f, open %d" % (st["equity"], CFG["start_cash"], st["cash"], len(st["positions"])))
 
 
@@ -295,6 +301,30 @@ def report(st=None):
               for t in st["closed"]]
     with open(REPORT, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
+
+
+def news(st):
+    """Writes news.md: latest Yahoo headlines for every market the bot trades or holds. Information
+    only: no strategy reads it, so a headline can never move an order the validator did not judge."""
+    syms = [p["sym"] for p in st["positions"]]
+    if os.path.exists(SELECTION):
+        with open(SELECTION, encoding="utf-8") as fh:
+            syms += [p["market"] for p in json.load(fh).get("ranking", [])]
+    lines = ["# Market news", "", "Headlines for the markets the bot trades. Informational only: not used for any decision.", ""]
+    for sym in dict.fromkeys(syms):
+        q = {"BTC-USD": "Bitcoin", "ETH-USD": "Ethereum"}.get(sym, sym)   # Yahoo finds no news for the -USD tickers
+        url = "https://query2.finance.yahoo.com/v1/finance/search?q=%s&newsCount=5&quotesCount=0" % urllib.parse.quote(q)
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 paper-bot"}), timeout=20) as r:
+                items = json.load(r).get("news", [])
+        except Exception as e:
+            lines += ["## %s" % sym, "", "no news (%s)" % e, ""]
+            continue
+        lines += ["## %s" % sym, ""] + ["- %s UTC, %s: [%s](%s)" % (
+            dt.datetime.fromtimestamp(n["providerPublishTime"], dt.timezone.utc).strftime("%m-%d %H:%M"), n.get("publisher", "?"),
+            n["title"], n.get("link", "")) for n in items] + [""]
+    with open(NEWS, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines))
 
 
 def selftest():
