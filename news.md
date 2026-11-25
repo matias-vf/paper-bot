@@ -12,18 +12,19 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
+- 11-25 18:16 UTC, MT Newswires: [US Dollar Weakens Against Canada's Loonie; Treasury Yields And Gold Fall](https://finance.yahoo.com/markets/currencies/articles/us-dollar-weakens-against-canada-181620276.html)
+- 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
 - 11-25 17:32 UTC, The Wall Street Journal: [Energy & Utilities Roundup: Market Talk](https://finance.yahoo.com/m/f2574464-d7e1-3a4c-9bba-0c9997454a77/energy-%26-utilities-roundup%3A.html)
 - 11-25 16:43 UTC, Investor's Business Daily: [Stock Market Today: Dow Falls 700 Points, Nasdaq Off 4%; Nutanix Dives On CEO Exit (Live Coverage)](https://finance.yahoo.com/m/90407e46-3b17-34e8-8c82-527bf00b63e4/stock-market-today%3A-dow-falls.html)
-- 11-25 16:19 UTC, Reuters: [BoE's Bailey sees lower inflation peak if energy prices stabilise](https://finance.yahoo.com/economy/policy/articles/boes-bailey-sees-lower-inflation-145706525.html)
-- 11-25 16:16 UTC, Zacks: [Zacks.com featured highlights include Dollar General, Powell Industries and Reinsurance Group of America](https://finance.yahoo.com/markets/stocks/articles/zacks-com-featured-highlights-dollar-161600407.html)
 
 ## XLE
 
+- 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
+- 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
 - 11-25 14:21 UTC, MT Newswires: [Sector Update: Energy Stocks Lean Lower Pre-Bell Wednesday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-lean-lower-142158117.html)
 - 11-25 14:07 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-140751314.html)
 - 11-25 12:14 UTC, Simply Wall St.: [Why Chevron Investors Could Make Sense Of ETFs Now](https://finance.yahoo.com/energy/articles/why-chevron-investors-could-sense-121452095.html)
-- 11-25 10:37 UTC, Barchart: [Do Wall Street Analysts Like Expand Energy Stock?](https://finance.yahoo.com/energy/articles/wall-street-analysts-expand-energy-103712136.html)
-- 11-24 20:59 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-afternoon-205928199.html)
 
 ## BTC-USD
 
