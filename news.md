@@ -12,19 +12,19 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 18:49 UTC, Reuters: [Analysis-Venezuela data deluge cheers investors, but $237 billion debt test lies ahead](https://finance.yahoo.com/economy/policy/articles/analysis-venezuela-data-deluge-cheers-153526128.html)
+- 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
 - 11-25 18:17 UTC, Investor's Business Daily: [Stock Market Today: Dow Cuts Loss Of 1,100 Points, Equal-Weighted S&P 500 Fund Up (Live Coverage)](https://finance.yahoo.com/m/90407e46-3b17-34e8-8c82-527bf00b63e4/stock-market-today%3A-dow-cuts.html)
 - 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
 - 11-25 18:16 UTC, MT Newswires: [US Dollar Weakens Against Canada's Loonie; Treasury Yields And Gold Fall](https://finance.yahoo.com/markets/currencies/articles/us-dollar-weakens-against-canada-181620276.html)
-- 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
-- 11-25 18:05 UTC, CNN Business: [Russian oil firm Lukoil’s overseas assets sold to investors led by US billionaire Todd Boehly](https://finance.yahoo.com/energy/articles/russian-oil-firm-lukoil-overseas-180549091.html)
 
 ## XLE
 
+- 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
 - 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
 - 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
 - 11-25 14:21 UTC, MT Newswires: [Sector Update: Energy Stocks Lean Lower Pre-Bell Wednesday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-lean-lower-142158117.html)
 - 11-25 14:07 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-140751314.html)
-- 11-25 12:14 UTC, Simply Wall St.: [Why Chevron Investors Could Make Sense Of ETFs Now](https://finance.yahoo.com/energy/articles/why-chevron-investors-could-sense-121452095.html)
 
 ## BTC-USD
 
