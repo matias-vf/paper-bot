@@ -12,10 +12,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 17:32 UTC, The Wall Street Journal: [Energy & Utilities Roundup: Market Talk](https://finance.yahoo.com/m/f2574464-d7e1-3a4c-9bba-0c9997454a77/energy-%26-utilities-roundup%3A.html)
 - 11-25 16:43 UTC, Investor's Business Daily: [Stock Market Today: Dow Falls 700 Points, Nasdaq Off 4%; Nutanix Dives On CEO Exit (Live Coverage)](https://finance.yahoo.com/m/90407e46-3b17-34e8-8c82-527bf00b63e4/stock-market-today%3A-dow-falls.html)
 - 11-25 16:19 UTC, Reuters: [BoE's Bailey sees lower inflation peak if energy prices stabilise](https://finance.yahoo.com/economy/policy/articles/boes-bailey-sees-lower-inflation-145706525.html)
 - 11-25 16:16 UTC, Zacks: [Zacks.com featured highlights include Dollar General, Powell Industries and Reinsurance Group of America](https://finance.yahoo.com/markets/stocks/articles/zacks-com-featured-highlights-dollar-161600407.html)
-- 11-25 15:46 UTC, Barrons.com: [The Manager of the World’s Largest Sovereign Wealth Fund on AI, Government Bonds, Real Estate](https://finance.yahoo.com/m/fac7f987-6b68-326d-97c5-2bcd84e6bc96/the-manager-of-the-world%E2%80%99s.html)
 
 ## XLE
 
