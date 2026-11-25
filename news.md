@@ -12,19 +12,19 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-25 20:56 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-205633406.html)
 - 11-25 20:52 UTC, Oilprice.com: [Brazil's 220,000-Bpd Bacalhau Oil Field Hit by Major Production Outage](https://finance.yahoo.com/energy/articles/brazils-220-000-bpd-bacalhau-205200049.html)
 - 11-25 20:33 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203348957.html)
 - 11-25 20:00 UTC, Associated Press: [BC-OILS](https://finance.yahoo.com/markets/commodities/articles/bc-oils-200019169.html)
 - 11-25 19:30 UTC, GlobeNewswire: [Pyrolysis Oil Market to Hit USD 4.33 Billion by 2032 as Chemical Manufacturing Investments Drive Demand Across Asia-Pacific - Mordor Intelligence](https://finance.yahoo.com/energy/articles/pyrolysis-oil-market-hit-usd-193000437.html)
-- 11-25 19:15 UTC, GuruFocus.com: [EQT (EQT) Stock Is Up 4.8% Today as Energy Stocks Rally](https://finance.yahoo.com/energy/articles/eqt-eqt-stock-4-8-191517165.html)
 
 ## XLE
 
+- 11-25 20:56 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-205633406.html)
 - 11-25 20:33 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203348957.html)
 - 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
 - 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
 - 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
-- 11-25 14:21 UTC, MT Newswires: [Sector Update: Energy Stocks Lean Lower Pre-Bell Wednesday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-lean-lower-142158117.html)
 
 ## BTC-USD
 
