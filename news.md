@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 14:00 UTC, MT Newswires: [Market Chatter: Enbridge in Discussions to Sell Part of its Crude Oil Pipeline Network for CA$1.5 Billion](https://finance.yahoo.com/energy/articles/market-chatter-enbridge-discussions-sell-140000835.html)
 - 11-26 13:00 UTC, MT Newswires: [Saskatchewan's Path to Budget Balance Remains Dependent on Oil Prices, Scotiabank Says](https://finance.yahoo.com/economy/policy/articles/saskatchewan-apos-path-budget-balance-130053231.html)
 - 11-26 12:38 UTC, Just Drinks: [Orior cuts sales, earnings outlook](https://finance.yahoo.com/markets/stocks/articles/orior-cuts-sales-earnings-outlook-123815750.html)
 - 11-26 12:13 UTC, International Business Times: [Iran Claims Two Tankers Hit Mines In Strait Of Hormuz. But Oil Traders Are More Worried About Too Much Crude.](https://finance.yahoo.com/energy/articles/iran-claims-two-tankers-hit-121327019.html)
 - 11-26 11:54 UTC, The Wall Street Journal: [Energy & Utilities Roundup: Market Talk](https://finance.yahoo.com/m/8096a8eb-5447-3d02-9270-61fb7b6e4312/energy-%26-utilities-roundup%3A.html)
-- 11-26 11:44 UTC, Investing.com: [Europe gas prices rangebound as markets weigh Middle East tensions](https://finance.yahoo.com/energy/articles/europe-gas-prices-rangebound-markets-114458393.html)
 
 ## XLE
 
