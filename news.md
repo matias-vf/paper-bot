@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-26 15:25 UTC, MT Newswires: [S&P/TSX Composite Index Higher Mid-Morning Thursday, Led by Strong Gains in Energy Shares](https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-higher-152510298.html)
-- 11-26 15:12 UTC, 24/7 Wall St.: [Trump Blames the Midterm Election Results for the Stock Market Selloff](https://finance.yahoo.com/markets/stocks/articles/trump-blames-midterm-election-results-151207066.html)
-- 11-26 15:08 UTC, MT Newswires: [Canada Commodities: Crude Oil Prices Climb as Fighting in The Middle East Intensifies](https://finance.yahoo.com/markets/commodities/articles/canada-commodities-crude-oil-prices-150841697.html)
-- 11-26 14:58 UTC, CNN Business: [Russian oil firm Lukoil’s overseas assets sold to investors led by US billionaire Todd Boehly](https://finance.yahoo.com/energy/articles/russian-oil-firm-lukoil-overseas-180549091.html)
-- 11-26 14:48 UTC, Reuters: [Oil prices rise after mine strikes on ships revive supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
+- 11-26 15:50 UTC, TheStreet: [Before the bell: gold, oil, and Bitcoin skip the Thanksgiving break](https://finance.yahoo.com/markets/commodities/articles/bell-gold-oil-bitcoin-skip-155000839.html)
+- 11-26 15:45 UTC, Insider Monkey: [Strong AI Revenue Growth and Earnings Beat Ease Disruption Fears for EPAM Systems (EPAM)](https://finance.yahoo.com/markets/stocks/articles/strong-ai-revenue-growth-earnings-154535105.html)
+- 11-26 15:45 UTC, Insider Monkey: [Bruker Corporation (BRKR) Advanced in Q3 on Accelerating Revenue Growth and Stronger Booking Momentum](https://finance.yahoo.com/markets/stocks/articles/bruker-corporation-brkr-advanced-q3-154503600.html)
+- 11-26 15:44 UTC, Insider Monkey: [Valvoline (VVV) Retreats as Expected Margin Compression Calms Investor Enthusiasm](https://finance.yahoo.com/markets/stocks/articles/valvoline-vvv-retreats-expected-margin-154411325.html)
+- 11-26 15:43 UTC, Insider Monkey: [Here’s What Boosted Investor Confidence in Azenta (AZTA)](https://finance.yahoo.com/markets/stocks/articles/boosted-investor-confidence-azenta-azta-154333197.html)
 
 ## XLE
 
