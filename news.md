@@ -5,10 +5,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 ## CL=F
 
 - 11-26 19:12 UTC, Reuters: [Brent settles higher as mine strikes, refinery attack stoke Middle East supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
+- 11-26 19:11 UTC, Simply Wall St.: [Chevron (CVX) Is Back In Focus, What Is Driving The Attention?](https://finance.yahoo.com/energy/articles/chevron-cvx-back-focus-driving-191123814.html)
 - 11-26 19:01 UTC, GuruFocus.com: [Exxon Mobil Stocks Edge Lower as Brent Jumps 3.5% on Refinery Attack](https://finance.yahoo.com/markets/stocks/articles/exxon-mobil-stocks-edge-lower-190142696.html)
 - 11-26 18:40 UTC, GuruFocus.com: [Chevron Stocks Rise 1.06% as Brent Jumps 3.5% on Saudi Refinery Attack Claim](https://finance.yahoo.com/energy/articles/chevron-stocks-rise-1-06-184046291.html)
 - 11-26 17:23 UTC, Oilprice.com: [Siemens Energy Signs Major Deal to Revive Venezuela's Power Grid](https://finance.yahoo.com/energy/articles/siemens-energy-signs-major-deal-172352287.html)
-- 11-26 17:10 UTC, Simply Wall St.: [Top 3 Nuclear Power Stocks To Watch In November 2026](https://finance.yahoo.com/energy/articles/top-3-nuclear-power-stocks-171051569.html)
 
 ## XLE
 
