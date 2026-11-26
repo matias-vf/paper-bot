@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 03:17 UTC, Investing.com: [Oil little changed as Hormuz attacks threaten rebound in Gulf crude shipments](https://finance.yahoo.com/energy/articles/oil-little-changed-hormuz-attacks-031718598.html)
 - 11-26 03:08 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 02:49 UTC, Reuters: [BOJ policymaker signals chance of faster-pace interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
 - 11-26 01:27 UTC, The Wall Street Journal: [Oil Rises Amid Ongoing Middle East Tensions](https://finance.yahoo.com/m/595b5beb-a0e2-3233-877a-767749d3cd92/oil-rises-amid-ongoing-middle.html)
 - 11-26 00:19 UTC, The Wall Street Journal: [Nikkei Rises 1.3%, Led by Chip, Metals Stocks](https://finance.yahoo.com/m/b6d24144-22db-3142-be90-9893ad1c4fc3/nikkei-rises-1.3%25%2C-led-by.html)
-- 11-25 22:09 UTC, The Wall Street Journal: [Crude Posts Back-to-Back Gains on Middle East Tension](https://finance.yahoo.com/m/0205a820-8bf4-3021-b041-620ef11e50b2/crude-posts-back-to-back.html)
 
 ## XLE
 
