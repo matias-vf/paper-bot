@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 15:12 UTC, 24/7 Wall St.: [Trump Blames the Midterm Election Results for the Stock Market Selloff](https://finance.yahoo.com/markets/stocks/articles/trump-blames-midterm-election-results-151207066.html)
+- 11-26 15:08 UTC, MT Newswires: [Canada Commodities: Crude Oil Prices Climb as Fighting in The Middle East Intensifies](https://finance.yahoo.com/markets/commodities/articles/canada-commodities-crude-oil-prices-150841697.html)
 - 11-26 14:48 UTC, Reuters: [Oil prices rise after mine strikes on ships revive supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 14:11 UTC, Investing.com: [ECB minutes show ’large’ number of members could have backed rate hike in October](https://finance.yahoo.com/economy/policy/articles/ecb-minutes-show-large-number-141140980.html)
 - 11-26 14:00 UTC, MT Newswires: [Market Chatter: Enbridge in Discussions to Sell Part of its Crude Oil Pipeline Network for CA$1.5 Billion](https://finance.yahoo.com/energy/articles/market-chatter-enbridge-discussions-sell-140000835.html)
-- 11-26 13:50 UTC, Zacks: [Ultrapar Outperforms Petrobras YTD: Why PBR Still Has the Edge](https://finance.yahoo.com/markets/stocks/articles/ultrapar-outperforms-petrobras-ytd-why-135000683.html)
-- 11-26 13:27 UTC, The Wall Street Journal: [OPEC, Allies Face Tough Choices as Surplus Builds, Hormuz Risks Persist](https://finance.yahoo.com/m/91da27c4-8363-3144-b4ea-34a161403eca/opec%2C-allies-face-tough.html)
 
 ## XLE
 
