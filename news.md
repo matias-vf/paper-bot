@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 17:06 UTC, Insider Monkey: [AppLovin’s (APP) E-Commerce Bet Is Paying Off—And Ad Prices Prove It](https://finance.yahoo.com/media-advertising/articles/applovin-app-e-commerce-bet-170610809.html)
+- 11-26 17:03 UTC, Insider Monkey: [Sea Ltd (SE): High Reinvestment Drag Mutes Near-Term Margins Despite Strong Top-Line Compounding](https://finance.yahoo.com/markets/stocks/articles/sea-ltd-se-high-reinvestment-170315251.html)
+- 11-26 16:59 UTC, Insider Monkey: [Meta Platforms’ (META) Surging Capex Pressures Free Cash Flow Amid Monetization Debates](https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-surging-capex-165927360.html)
+- 11-26 16:56 UTC, Insider Monkey: [Can Coupang (CPNG) Overcome Operational Headwinds to Restore Margins?](https://finance.yahoo.com/markets/stocks/articles/coupang-cpng-overcome-operational-headwinds-165632876.html)
 - 11-26 16:54 UTC, Insider Monkey: [MercadoLibre (MELI): Near-Term Margin Compression Masks Strong User and Credit Growth](https://finance.yahoo.com/markets/stocks/articles/mercadolibre-meli-near-term-margin-165411501.html)
-- 11-26 16:46 UTC, Insider Monkey: [Victory Capital Holdings (VCTR) Rose on Record Q2 Results](https://finance.yahoo.com/markets/stocks/articles/victory-capital-holdings-vctr-rose-164657364.html)
-- 11-26 16:45 UTC, Insider Monkey: [Underappreciated AI Beneficiary Zeta Global (ZETA) Expands Full-Year Guidance Across the Board](https://finance.yahoo.com/technology/ai/articles/underappreciated-ai-beneficiary-zeta-global-164509491.html)
-- 11-26 16:39 UTC, Insider Monkey: [Here’s What Pulled Back FTAI Aviation Ltd. (FTAI) in Q3](https://finance.yahoo.com/markets/stocks/articles/pulled-back-ftai-aviation-ltd-163931315.html)
-- 11-26 16:23 UTC, GuruFocus.com: [Oil Markets Face Another Potential Threat to Household Fuel Costs](https://finance.yahoo.com/energy/articles/oil-markets-face-another-potential-162336490.html)
 
 ## XLE
 
