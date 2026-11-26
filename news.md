@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 18:40 UTC, GuruFocus.com: [Chevron Stocks Rise 1.06% as Brent Jumps 3.5% on Saudi Refinery Attack Claim](https://finance.yahoo.com/energy/articles/chevron-stocks-rise-1-06-184046291.html)
 - 11-26 18:09 UTC, Reuters: [Oil prices rise after mine strikes on ships revive supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 17:23 UTC, Oilprice.com: [Siemens Energy Signs Major Deal to Revive Venezuela's Power Grid](https://finance.yahoo.com/energy/articles/siemens-energy-signs-major-deal-172352287.html)
 - 11-26 17:10 UTC, Simply Wall St.: [Top 3 Nuclear Power Stocks To Watch In November 2026](https://finance.yahoo.com/energy/articles/top-3-nuclear-power-stocks-171051569.html)
 - 11-26 17:09 UTC, Insider Monkey: [Nu Holdings (NU): Why Investors Gave the Stock a Mixed Reception Despite Strong Results?](https://finance.yahoo.com/markets/stocks/articles/nu-holdings-nu-why-investors-170952971.html)
-- 11-26 17:06 UTC, MT Newswires: [Update: Market Chatter: Enbridge in Discussions to Sell Part of its Crude Oil Pipeline Network for CA$1.5 Billion](https://finance.yahoo.com/energy/articles/market-chatter-enbridge-discussions-sell-170615405.html)
 
 ## XLE
 
