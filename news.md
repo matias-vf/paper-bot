@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 16:54 UTC, Insider Monkey: [MercadoLibre (MELI): Near-Term Margin Compression Masks Strong User and Credit Growth](https://finance.yahoo.com/markets/stocks/articles/mercadolibre-meli-near-term-margin-165411501.html)
+- 11-26 16:46 UTC, Insider Monkey: [Victory Capital Holdings (VCTR) Rose on Record Q2 Results](https://finance.yahoo.com/markets/stocks/articles/victory-capital-holdings-vctr-rose-164657364.html)
+- 11-26 16:45 UTC, Insider Monkey: [Underappreciated AI Beneficiary Zeta Global (ZETA) Expands Full-Year Guidance Across the Board](https://finance.yahoo.com/technology/ai/articles/underappreciated-ai-beneficiary-zeta-global-164509491.html)
 - 11-26 16:39 UTC, Insider Monkey: [Here’s What Pulled Back FTAI Aviation Ltd. (FTAI) in Q3](https://finance.yahoo.com/markets/stocks/articles/pulled-back-ftai-aviation-ltd-163931315.html)
 - 11-26 16:23 UTC, GuruFocus.com: [Oil Markets Face Another Potential Threat to Household Fuel Costs](https://finance.yahoo.com/energy/articles/oil-markets-face-another-potential-162336490.html)
-- 11-26 16:21 UTC, Reuters: [Oil prices rise after mine strikes on ships revive supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
-- 11-26 16:14 UTC, Insider Monkey: [Sector-Wide Infrastructure De-Rating Pulled Back Forgent Power Solutions (FPS) in Q3](https://finance.yahoo.com/markets/stocks/articles/sector-wide-infrastructure-rating-pulled-161443951.html)
-- 11-26 16:09 UTC, Insider Monkey: [Investors’ Concerns Weighed on Indie Semiconductor (INDI) in Q3](https://finance.yahoo.com/markets/stocks/articles/investors-concerns-weighed-indie-semiconductor-160950684.html)
 
 ## XLE
 
