@@ -1,19 +1,18 @@
 # Paper bot report
 
-Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-25 20:33 ET.
+Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-25 20:35 ET.
 
 | | |
 | --- | --- |
 | Start | 110.00 USD |
-| Equity | 117.86 USD (+7.1%) |
-| Cash | 2.35 USD |
-| Closed trades | 4 (4 won) |
+| Equity | 117.88 USD (+7.2%) |
+| Cash | 117.88 USD |
+| Closed trades | 5 (5 won) |
 
 ## Open
 
 | symbol | market | qty | entry | stop | target | opened | why |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| EURUSD=X | rsi_reversion | 105.003 | 1.0985 | 1.1019 | 1.0969 | 2026-11-25 12:01 ET | rsi_reversion {"low": 30, "rsi_n": 14, "stop_atr": 3} (PROBATION, 4e672ec6161b23e5) on the 1h close 1.0982 |
 
 ## Closed
 
@@ -23,3 +22,4 @@ Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-25 2
 | ETH-USD | 1890.4399 | 1794.1248 | 1h close 1910.53 under 12h low 1912.44, EMA20 < EMA50, daily downtrend | +3.31 | 2026-11-13 22:52 ET |
 | CL=F | 87.1100 | 86.4487 | rsi_reversion {"low": 10, "rsi_n": 5, "stop_atr": 1.5} (PROBATION, 4e672ec6161b23e5) on the 1h close 87.0000 | +0.52 | 2026-11-17 09:55 ET |
 | ETH-USD | 1786.2300 | 1617.7799 | 1h close 1782.77 under 12h low 1810.80, EMA20 < EMA50, daily downtrend | +3.41 | 2026-11-14 16:39 ET |
+| EURUSD=X | 1.0985 | 1.0969 | rsi_reversion {"low": 30, "rsi_n": 14, "stop_atr": 3} (PROBATION, 4e672ec6161b23e5) on the 1h close 1.0982 | +0.18 | 2026-11-25 12:01 ET |
