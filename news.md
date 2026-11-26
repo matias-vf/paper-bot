@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 05:18 UTC, Oilprice.com: [Oil Rallies as Hormuz Mine Strikes Rattle Global Markets](https://finance.yahoo.com/energy/articles/oil-rallies-hormuz-mine-strikes-051859077.html)
 - 11-26 04:25 UTC, Investing.com: [BOJ’s Tamura flags faster pace of rate hikes amid inflation risk](https://finance.yahoo.com/economy/policy/articles/boj-tamura-flags-faster-pace-042528798.html)
 - 11-26 03:17 UTC, Investing.com: [Oil little changed as Hormuz attacks threaten rebound in Gulf crude shipments](https://finance.yahoo.com/energy/articles/oil-little-changed-hormuz-attacks-031718598.html)
 - 11-26 03:08 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 02:49 UTC, Reuters: [BOJ policymaker signals chance of faster-pace interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
-- 11-26 01:27 UTC, The Wall Street Journal: [Oil Rises Amid Ongoing Middle East Tensions](https://finance.yahoo.com/m/595b5beb-a0e2-3233-877a-767749d3cd92/oil-rises-amid-ongoing-middle.html)
 
 ## XLE
 
