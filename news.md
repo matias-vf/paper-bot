@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 01:35 UTC, Reuters: [BOJ's Tamura signals chance of faster-pace interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
 - 11-26 00:19 UTC, The Wall Street Journal: [Nikkei Rises 1.3%, Led by Chip, Metals Stocks](https://finance.yahoo.com/m/b6d24144-22db-3142-be90-9893ad1c4fc3/nikkei-rises-1.3%25%2C-led-by.html)
 - 11-25 22:09 UTC, The Wall Street Journal: [Crude Posts Back-to-Back Gains on Middle East Tension](https://finance.yahoo.com/m/0205a820-8bf4-3021-b041-620ef11e50b2/crude-posts-back-to-back.html)
 - 11-25 22:03 UTC, The Wall Street Journal: [Energy & Utilities Roundup: Market Talk](https://finance.yahoo.com/m/f2574464-d7e1-3a4c-9bba-0c9997454a77/energy-%26-utilities-roundup%3A.html)
 - 11-25 21:33 UTC, MT Newswires: [US Equity Markets Mixed Amid US Plans for New Tariffs on China, Europe](https://finance.yahoo.com/economy/policy/articles/us-equity-markets-mixed-amid-213322374.html)
-- 11-25 21:29 UTC, MT Newswires: [TSX Closer: Index Rebounds From Tuesday's Losses as Base Metals And Energy Stocks Advance](https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-rebounds-tuesday-212956748.html)
 
 ## XLE
 
