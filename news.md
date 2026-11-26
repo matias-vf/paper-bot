@@ -5,10 +5,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 ## CL=F
 
 - 11-26 06:24 UTC, Reuters: [BOJ policymaker signals chance of faster-paced interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
+- 11-26 06:14 UTC, Simply Wall St.: [3 Oil Stocks With Direct Exposure To Higher Crude Prices](https://finance.yahoo.com/energy/articles/3-oil-stocks-direct-exposure-061445059.html)
 - 11-26 06:00 UTC, BeInCrypto: [Oil Crashed 20% Three Times This Year. Is a Fourth Coming?](https://finance.yahoo.com/energy/articles/oil-crashed-20-three-times-060000499.html)
 - 11-26 05:18 UTC, Oilprice.com: [Oil Rallies as Hormuz Mine Strikes Rattle Global Markets](https://finance.yahoo.com/energy/articles/oil-rallies-hormuz-mine-strikes-051859077.html)
 - 11-26 04:25 UTC, Investing.com: [BOJ’s Tamura flags faster pace of rate hikes amid inflation risk](https://finance.yahoo.com/economy/policy/articles/boj-tamura-flags-faster-pace-042528798.html)
-- 11-26 03:17 UTC, Investing.com: [Oil little changed as Hormuz attacks threaten rebound in Gulf crude shipments](https://finance.yahoo.com/energy/articles/oil-little-changed-hormuz-attacks-031718598.html)
 
 ## XLE
 
