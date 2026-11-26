@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 16:23 UTC, GuruFocus.com: [Oil Markets Face Another Potential Threat to Household Fuel Costs](https://finance.yahoo.com/energy/articles/oil-markets-face-another-potential-162336490.html)
 - 11-26 16:21 UTC, Reuters: [Oil prices rise after mine strikes on ships revive supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 16:14 UTC, Insider Monkey: [Sector-Wide Infrastructure De-Rating Pulled Back Forgent Power Solutions (FPS) in Q3](https://finance.yahoo.com/markets/stocks/articles/sector-wide-infrastructure-rating-pulled-161443951.html)
 - 11-26 16:09 UTC, Insider Monkey: [Investors’ Concerns Weighed on Indie Semiconductor (INDI) in Q3](https://finance.yahoo.com/markets/stocks/articles/investors-concerns-weighed-indie-semiconductor-160950684.html)
 - 11-26 16:04 UTC, Insider Monkey: [Declining Reinsurance Costs and Capital Building Support Multi-Year Growth for Porch Group (PRCH)](https://finance.yahoo.com/markets/stocks/articles/declining-reinsurance-costs-capital-building-160416426.html)
-- 11-26 15:50 UTC, TheStreet: [Before the bell: gold, oil, and Bitcoin skip the Thanksgiving break](https://finance.yahoo.com/markets/commodities/articles/bell-gold-oil-bitcoin-skip-155000839.html)
 
 ## XLE
 
