@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 08:55 UTC, The Wall Street Journal: [Oil Mixed Amid Middle East Attacks, U.S. Inventory Build](https://finance.yahoo.com/m/595b5beb-a0e2-3233-877a-767749d3cd92/oil-mixed-amid-middle-east.html)
 - 11-26 08:50 UTC, Investing.com: [FTSE 100 today: Stocks rise as tech rebound offsets tariff worries](https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-rise-085009588.html)
+- 11-26 08:32 UTC, The Wall Street Journal: [Gilt Yields Rise as Inflation Concerns Linger](https://finance.yahoo.com/m/4b333f8d-a9f1-3441-9fef-3ce5bb91c105/gilt-yields-rise-as-inflation.html)
 - 11-26 08:01 UTC, Proactive: [Arrow Exploration doubles Q3 profit as output continues to rise and oil prices remain high](https://finance.yahoo.com/energy/articles/arrow-exploration-doubles-q3-profit-080100952.html)
 - 11-26 06:54 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
-- 11-26 06:45 UTC, Oilprice.com: [Enbridge Eyes $1 Billion Pipeline Deal With Indigenous Communities](https://finance.yahoo.com/energy/articles/enbridge-eyes-1-billion-pipeline-064500452.html)
-- 11-26 06:24 UTC, Reuters: [BOJ policymaker signals chance of faster-paced interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
 
 ## XLE
 
