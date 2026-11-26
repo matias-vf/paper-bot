@@ -4,19 +4,14 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 06:00 UTC, BeInCrypto: [Oil Crashed 20% Three Times This Year. Is a Fourth Coming?](https://finance.yahoo.com/energy/articles/oil-crashed-20-three-times-060000499.html)
 - 11-26 05:18 UTC, Oilprice.com: [Oil Rallies as Hormuz Mine Strikes Rattle Global Markets](https://finance.yahoo.com/energy/articles/oil-rallies-hormuz-mine-strikes-051859077.html)
 - 11-26 04:25 UTC, Investing.com: [BOJ’s Tamura flags faster pace of rate hikes amid inflation risk](https://finance.yahoo.com/economy/policy/articles/boj-tamura-flags-faster-pace-042528798.html)
 - 11-26 03:17 UTC, Investing.com: [Oil little changed as Hormuz attacks threaten rebound in Gulf crude shipments](https://finance.yahoo.com/energy/articles/oil-little-changed-hormuz-attacks-031718598.html)
 - 11-26 03:08 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
-- 11-26 02:49 UTC, Reuters: [BOJ policymaker signals chance of faster-pace interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
 
 ## XLE
 
-- 11-25 20:56 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-205633406.html)
-- 11-25 20:33 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203348957.html)
-- 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
-- 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
-- 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
 
 ## BTC-USD
 
