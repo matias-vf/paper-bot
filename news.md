@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 15:25 UTC, MT Newswires: [S&P/TSX Composite Index Higher Mid-Morning Thursday, Led by Strong Gains in Energy Shares](https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-higher-152510298.html)
 - 11-26 15:12 UTC, 24/7 Wall St.: [Trump Blames the Midterm Election Results for the Stock Market Selloff](https://finance.yahoo.com/markets/stocks/articles/trump-blames-midterm-election-results-151207066.html)
 - 11-26 15:08 UTC, MT Newswires: [Canada Commodities: Crude Oil Prices Climb as Fighting in The Middle East Intensifies](https://finance.yahoo.com/markets/commodities/articles/canada-commodities-crude-oil-prices-150841697.html)
 - 11-26 14:48 UTC, Reuters: [Oil prices rise after mine strikes on ships revive supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 14:11 UTC, Investing.com: [ECB minutes show ’large’ number of members could have backed rate hike in October](https://finance.yahoo.com/economy/policy/articles/ecb-minutes-show-large-number-141140980.html)
-- 11-26 14:00 UTC, MT Newswires: [Market Chatter: Enbridge in Discussions to Sell Part of its Crude Oil Pipeline Network for CA$1.5 Billion](https://finance.yahoo.com/energy/articles/market-chatter-enbridge-discussions-sell-140000835.html)
 
 ## XLE
 
