@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-26 21:27 UTC, MT Newswires: [First Helium Provides Update on Acquisition of Shallow Heavy Oil Assets in Alberta](https://finance.yahoo.com/energy/articles/first-helium-provides-acquisition-shallow-212703027.html)
 - 11-26 21:18 UTC, MT Newswires: [TSX Closer: Index Rises for Second Straight Session as Energy And Technology Stocks Advance](https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-rises-second-211819850.html)
 - 11-26 21:10 UTC, ACCESS Newswire: [First Helium Provides Update on Pending Acquisition and Trading Halt](https://finance.yahoo.com/energy/articles/first-helium-provides-pending-acquisition-211000874.html)
 - 11-26 19:12 UTC, Reuters: [Brent settles higher as mine strikes, refinery attack stoke Middle East supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 19:11 UTC, Simply Wall St.: [Chevron (CVX) Is Back In Focus, What Is Driving The Attention?](https://finance.yahoo.com/energy/articles/chevron-cvx-back-focus-driving-191123814.html)
+- 11-26 19:01 UTC, GuruFocus.com: [Exxon Mobil Stocks Edge Lower as Brent Jumps 3.5% on Refinery Attack](https://finance.yahoo.com/markets/stocks/articles/exxon-mobil-stocks-edge-lower-190142696.html)
 
 ## XLE
 
