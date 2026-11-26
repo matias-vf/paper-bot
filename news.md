@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 05:18 UTC, Oilprice.com: [Oil Rallies as Hormuz Mine Strikes Rattle Global Markets](https://finance.yahoo.com/energy/articles/oil-rallies-hormuz-mine-strikes-051859077.html)
 - 11-26 04:25 UTC, Investing.com: [BOJ’s Tamura flags faster pace of rate hikes amid inflation risk](https://finance.yahoo.com/economy/policy/articles/boj-tamura-flags-faster-pace-042528798.html)
 - 11-26 03:17 UTC, Investing.com: [Oil little changed as Hormuz attacks threaten rebound in Gulf crude shipments](https://finance.yahoo.com/energy/articles/oil-little-changed-hormuz-attacks-031718598.html)
 - 11-26 03:08 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 02:49 UTC, Reuters: [BOJ policymaker signals chance of faster-pace interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
-- 11-26 01:27 UTC, The Wall Street Journal: [Oil Rises Amid Ongoing Middle East Tensions](https://finance.yahoo.com/m/595b5beb-a0e2-3233-877a-767749d3cd92/oil-rises-amid-ongoing-middle.html)
 
 ## XLE
 
@@ -20,6 +20,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## BTC-USD
 
+- 11-25 22:26 UTC, Motley Fool: [Crypto Market Today, Nov. 25: Bitcoin, Ethereum, and Solana as Short Liquidations Fuel Fragile Rebound](https://finance.yahoo.com/markets/crypto/articles/crypto-market-today-nov-25-222619217.html)
+- 11-25 11:15 UTC, Coinspeaker: [Bitcoin Price Could Crash to $39K Despite Slowing ETF Outflows: Is Worst Yet to Come?](https://finance.yahoo.com/markets/crypto/articles/bitcoin-price-could-crash-39k-111504589.html)
+- 11-25 08:05 UTC, Cryptonews: [Crypto News Today: Bitcoin Hit by Trump Tariff Threat and US Treasury Cyberattack as IBIT Bleeds Billions](https://finance.yahoo.com/markets/crypto/articles/live-crypto-news-today-bitcoin-080523882.html)
+- 11-25 06:49 UTC, Investing.com: [Bitcoin recovers after hit from ETF outflows, AI rout, and hot U.S. economic data](https://finance.yahoo.com/markets/crypto/articles/bitcoin-extends-losses-below-59-064934005.html)
+- 11-24 14:24 UTC, CryptoProwl: [Bitcoin ETF Outflows Hit A Record $4.71 Billion](https://finance.yahoo.com/markets/crypto/articles/bitcoin-etf-outflows-hit-record-142400753.html)
 
 ## EURUSD=X
 
