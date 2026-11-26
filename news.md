@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 21:18 UTC, MT Newswires: [TSX Closer: Index Rises for Second Straight Session as Energy And Technology Stocks Advance](https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-rises-second-211819850.html)
+- 11-26 21:10 UTC, ACCESS Newswire: [First Helium Provides Update on Pending Acquisition and Trading Halt](https://finance.yahoo.com/energy/articles/first-helium-provides-pending-acquisition-211000874.html)
 - 11-26 19:12 UTC, Reuters: [Brent settles higher as mine strikes, refinery attack stoke Middle East supply concerns](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 19:11 UTC, Simply Wall St.: [Chevron (CVX) Is Back In Focus, What Is Driving The Attention?](https://finance.yahoo.com/energy/articles/chevron-cvx-back-focus-driving-191123814.html)
 - 11-26 19:01 UTC, GuruFocus.com: [Exxon Mobil Stocks Edge Lower as Brent Jumps 3.5% on Refinery Attack](https://finance.yahoo.com/markets/stocks/articles/exxon-mobil-stocks-edge-lower-190142696.html)
-- 11-26 18:40 UTC, GuruFocus.com: [Chevron Stocks Rise 1.06% as Brent Jumps 3.5% on Saudi Refinery Attack Claim](https://finance.yahoo.com/energy/articles/chevron-stocks-rise-1-06-184046291.html)
-- 11-26 17:23 UTC, Oilprice.com: [Siemens Energy Signs Major Deal to Revive Venezuela's Power Grid](https://finance.yahoo.com/energy/articles/siemens-energy-signs-major-deal-172352287.html)
 
 ## XLE
 
