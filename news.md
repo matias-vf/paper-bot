@@ -4,11 +4,6 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-26 12:13 UTC, International Business Times: [Iran Claims Two Tankers Hit Mines In Strait Of Hormuz. But Oil Traders Are More Worried About Too Much Crude.](https://finance.yahoo.com/energy/articles/iran-claims-two-tankers-hit-121327019.html)
-- 11-26 11:54 UTC, The Wall Street Journal: [Energy & Utilities Roundup: Market Talk](https://finance.yahoo.com/m/8096a8eb-5447-3d02-9270-61fb7b6e4312/energy-%26-utilities-roundup%3A.html)
-- 11-26 11:44 UTC, Investing.com: [Europe gas prices rangebound as markets weigh Middle East tensions](https://finance.yahoo.com/energy/articles/europe-gas-prices-rangebound-markets-114458393.html)
-- 11-26 11:21 UTC, MT Newswires: [Commerzbank Says Treasury Futures Are Softer, US Equity Futures Higher as Oil Prices Advance](https://finance.yahoo.com/economy/policy/articles/commerzbank-says-treasury-futures-softer-112100801.html)
-- 11-26 11:20 UTC, GuruFocus.com: [Halfords Group PLC (HLFDF) (Q2 2027) Earnings Call Highlights: Profit Surges 66% as ...](https://finance.yahoo.com/markets/stocks/articles/halfords-group-plc-hlfdf-q2-112040355.html)
 
 ## XLE
 
