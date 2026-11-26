@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 17:06 UTC, MT Newswires: [Update: Market Chatter: Enbridge in Discussions to Sell Part of its Crude Oil Pipeline Network for CA$1.5 Billion](https://finance.yahoo.com/energy/articles/market-chatter-enbridge-discussions-sell-170615405.html)
 - 11-26 17:06 UTC, Insider Monkey: [AppLovin’s (APP) E-Commerce Bet Is Paying Off—And Ad Prices Prove It](https://finance.yahoo.com/media-advertising/articles/applovin-app-e-commerce-bet-170610809.html)
 - 11-26 17:03 UTC, Insider Monkey: [Sea Ltd (SE): High Reinvestment Drag Mutes Near-Term Margins Despite Strong Top-Line Compounding](https://finance.yahoo.com/markets/stocks/articles/sea-ltd-se-high-reinvestment-170315251.html)
 - 11-26 16:59 UTC, Insider Monkey: [Meta Platforms’ (META) Surging Capex Pressures Free Cash Flow Amid Monetization Debates](https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-surging-capex-165927360.html)
 - 11-26 16:56 UTC, Insider Monkey: [Can Coupang (CPNG) Overcome Operational Headwinds to Restore Margins?](https://finance.yahoo.com/markets/stocks/articles/coupang-cpng-overcome-operational-headwinds-165632876.html)
-- 11-26 16:54 UTC, Insider Monkey: [MercadoLibre (MELI): Near-Term Margin Compression Masks Strong User and Credit Growth](https://finance.yahoo.com/markets/stocks/articles/mercadolibre-meli-near-term-margin-165411501.html)
 
 ## XLE
 
