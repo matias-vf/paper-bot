@@ -4,6 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 06:54 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
+- 11-26 06:45 UTC, Oilprice.com: [Enbridge Eyes $1 Billion Pipeline Deal With Indigenous Communities](https://finance.yahoo.com/energy/articles/enbridge-eyes-1-billion-pipeline-064500452.html)
+- 11-26 06:24 UTC, Reuters: [BOJ policymaker signals chance of faster-paced interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
+- 11-26 06:14 UTC, Simply Wall St.: [3 Oil Stocks With Direct Exposure To Higher Crude Prices](https://finance.yahoo.com/energy/articles/3-oil-stocks-direct-exposure-061445059.html)
+- 11-26 06:00 UTC, BeInCrypto: [Oil Crashed 20% Three Times This Year. Is a Fourth Coming?](https://finance.yahoo.com/energy/articles/oil-crashed-20-three-times-060000499.html)
 
 ## XLE
 
