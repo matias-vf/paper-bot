@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 08:50 UTC, Investing.com: [FTSE 100 today: Stocks rise as tech rebound offsets tariff worries](https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-rise-085009588.html)
 - 11-26 08:01 UTC, Proactive: [Arrow Exploration doubles Q3 profit as output continues to rise and oil prices remain high](https://finance.yahoo.com/energy/articles/arrow-exploration-doubles-q3-profit-080100952.html)
 - 11-26 06:54 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 06:45 UTC, Oilprice.com: [Enbridge Eyes $1 Billion Pipeline Deal With Indigenous Communities](https://finance.yahoo.com/energy/articles/enbridge-eyes-1-billion-pipeline-064500452.html)
 - 11-26 06:24 UTC, Reuters: [BOJ policymaker signals chance of faster-paced interest rate hikes](https://finance.yahoo.com/economy/policy/articles/bojs-tamura-signals-chance-faster-013537147.html)
-- 11-26 06:14 UTC, Simply Wall St.: [3 Oil Stocks With Direct Exposure To Higher Crude Prices](https://finance.yahoo.com/energy/articles/3-oil-stocks-direct-exposure-061445059.html)
 
 ## XLE
 
