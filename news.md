@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 11:21 UTC, MT Newswires: [Commerzbank Says Treasury Futures Are Softer, US Equity Futures Higher as Oil Prices Advance](https://finance.yahoo.com/economy/policy/articles/commerzbank-says-treasury-futures-softer-112100801.html)
+- 11-26 11:20 UTC, GuruFocus.com: [Halfords Group PLC (HLFDF) (Q2 2027) Earnings Call Highlights: Profit Surges 66% as ...](https://finance.yahoo.com/markets/stocks/articles/halfords-group-plc-hlfdf-q2-112040355.html)
 - 11-26 10:38 UTC, Reuters: [Oil rises on supply concerns as Iran claims mine strikes on ships](https://finance.yahoo.com/energy/articles/oil-rises-supply-concerns-iran-030849858.html)
 - 11-26 09:54 UTC, InvestorsHub: [Oil Prices Rise as Renewed Middle East Attacks Threaten Persian Gulf Supply Recovery](https://finance.yahoo.com/energy/articles/oil-prices-rise-renewed-middle-095445926.html)
 - 11-26 08:55 UTC, The Wall Street Journal: [Oil Mixed Amid Middle East Attacks, U.S. Inventory Build](https://finance.yahoo.com/m/595b5beb-a0e2-3233-877a-767749d3cd92/oil-mixed-amid-middle-east.html)
-- 11-26 08:50 UTC, Investing.com: [FTSE 100 today: Stocks rise as tech rebound offsets tariff worries](https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-rise-085009588.html)
-- 11-26 08:32 UTC, The Wall Street Journal: [Gilt Yields Rise as Inflation Concerns Linger](https://finance.yahoo.com/m/4b333f8d-a9f1-3441-9fef-3ce5bb91c105/gilt-yields-rise-as-inflation.html)
 
 ## XLE
 
