@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-26 16:09 UTC, Insider Monkey: [Investors’ Concerns Weighed on Indie Semiconductor (INDI) in Q3](https://finance.yahoo.com/markets/stocks/articles/investors-concerns-weighed-indie-semiconductor-160950684.html)
+- 11-26 16:04 UTC, Insider Monkey: [Declining Reinsurance Costs and Capital Building Support Multi-Year Growth for Porch Group (PRCH)](https://finance.yahoo.com/markets/stocks/articles/declining-reinsurance-costs-capital-building-160416426.html)
 - 11-26 15:50 UTC, TheStreet: [Before the bell: gold, oil, and Bitcoin skip the Thanksgiving break](https://finance.yahoo.com/markets/commodities/articles/bell-gold-oil-bitcoin-skip-155000839.html)
 - 11-26 15:45 UTC, Insider Monkey: [Strong AI Revenue Growth and Earnings Beat Ease Disruption Fears for EPAM Systems (EPAM)](https://finance.yahoo.com/markets/stocks/articles/strong-ai-revenue-growth-earnings-154535105.html)
 - 11-26 15:45 UTC, Insider Monkey: [Bruker Corporation (BRKR) Advanced in Q3 on Accelerating Revenue Growth and Stronger Booking Momentum](https://finance.yahoo.com/markets/stocks/articles/bruker-corporation-brkr-advanced-q3-154503600.html)
-- 11-26 15:44 UTC, Insider Monkey: [Valvoline (VVV) Retreats as Expected Margin Compression Calms Investor Enthusiasm](https://finance.yahoo.com/markets/stocks/articles/valvoline-vvv-retreats-expected-margin-154411325.html)
-- 11-26 15:43 UTC, Insider Monkey: [Here’s What Boosted Investor Confidence in Azenta (AZTA)](https://finance.yahoo.com/markets/stocks/articles/boosted-investor-confidence-azenta-azta-154333197.html)
 
 ## XLE
 
