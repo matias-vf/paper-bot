@@ -4,19 +4,19 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-27 14:31 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
+- 11-27 14:32 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
+- 11-27 14:24 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Premarket Friday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-premarket-142412429.html)
 - 11-27 14:10 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-141000528.html)
 - 11-27 14:03 UTC, Yahoo Finance: ['The consumer just is not in recession': Why holiday spending is still on track to grow](https://finance.yahoo.com/markets/stocks/article/the-consumer-just-is-not-in-recession-why-holiday-spending-is-still-on-track-to-grow-140327700.html)
 - 11-27 14:00 UTC, Investor's Business Daily: [Stock Market Today: Dow Futures Jump 650 Points As Nvidia Rebounds; Anthropic, SpaceX, Tesla Rally (Live Coverage)](https://finance.yahoo.com/m/86a4597f-ee47-3048-ae92-1a56fa4711e5/stock-market-today%3A-dow.html)
-- 11-27 13:52 UTC, MT Newswires: [Update: US Equity Futures Climb Pre-Bell as Traders Prepare to Wind Down Volatile Holiday Week](https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-climb-pre-135223782.html)
 
 ## XLE
 
+- 11-27 14:24 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Premarket Friday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-premarket-142412429.html)
 - 11-27 14:10 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-141000528.html)
 - 11-25 20:56 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-205633406.html)
 - 11-25 20:33 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203348957.html)
 - 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
-- 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
 
 ## BTC-USD
 
