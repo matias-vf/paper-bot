@@ -6,7 +6,7 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 - 11-27 05:13 UTC, Simply Wall St.: [3 Oil Stocks With Direct Leverage To High Crude Prices](https://finance.yahoo.com/energy/articles/3-oil-stocks-direct-leverage-051324910.html)
 - 11-27 05:12 UTC, Simply Wall St.: [British Energy Stocks To Watch In November 2026](https://finance.yahoo.com/energy/articles/british-energy-stocks-watch-november-051209541.html)
-- 11-27 04:45 UTC, Investing.com: [Dollar drifts lower in holiday-thinned trade, set to snap 4-wk winning streak](https://finance.yahoo.com/markets/currencies/articles/asia-fx-weakens-high-oil-044524263.html)
+- 11-27 04:45 UTC, Investing.com: [Asia FX weakens as high oil prices weigh; dollar edges lower in holiday trade](https://finance.yahoo.com/markets/currencies/articles/asia-fx-weakens-high-oil-044524263.html)
 - 11-27 04:36 UTC, Investing.com: [IMF urges RBA to maintain rate hike bias as inflation risks persist](https://finance.yahoo.com/economy/policy/articles/imf-urges-rba-maintain-rate-043609646.html)
 - 11-27 02:40 UTC, Investing.com: [Oil set for first weekly gain in November as WTI jumps 2.5%, Brent steadies](https://finance.yahoo.com/energy/articles/oil-set-first-weekly-gain-024015834.html)
 
