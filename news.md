@@ -23,7 +23,6 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-26 12:20 UTC, Motley Fool: [Billionaire Investor Paul Tudor Jones Just Doubled Down on Bitcoin. What Does He Know That the Market Doesn't?](https://finance.yahoo.com/markets/crypto/articles/billionaire-investor-paul-tudor-jones-122002931.html)
 - 11-25 22:26 UTC, Motley Fool: [Crypto Market Today, Nov. 25: Bitcoin, Ethereum, and Solana as Short Liquidations Fuel Fragile Rebound](https://finance.yahoo.com/markets/crypto/articles/crypto-market-today-nov-25-222619217.html)
 - 11-25 11:15 UTC, Coinspeaker: [Bitcoin Price Could Crash to $39K Despite Slowing ETF Outflows: Is Worst Yet to Come?](https://finance.yahoo.com/markets/crypto/articles/bitcoin-price-could-crash-39k-111504589.html)
-- 11-25 08:05 UTC, Cryptonews: [Crypto News Today: Bitcoin Hit by Trump Tariff Threat and US Treasury Cyberattack as IBIT Bleeds Billions](https://finance.yahoo.com/markets/crypto/articles/live-crypto-news-today-bitcoin-080523882.html)
 
 ## EURUSD=X
 
