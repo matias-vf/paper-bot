@@ -8,7 +8,7 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-27 17:43 UTC, TMX Newsfile: [Tethys Petroleum Press Release (TPL): Interim Results and Corporate Update](https://finance.yahoo.com/energy/articles/tethys-petroleum-press-release-tpl-174300442.html)
 - 11-27 17:34 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 17:27 UTC, MT Newswires: [Exchange-Traded Funds Higher as US Equities Advance in Friday Trading](https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-us-172712881.html)
-- 11-27 16:47 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-164750961.html)
+- 11-27 17:04 UTC, Oilprice.com: [The Oil Glut Everyone Expected Is Looking Increasingly Elusive](https://finance.yahoo.com/energy/articles/oil-glut-everyone-expected-looking-170400606.html)
 
 ## XLE
 
