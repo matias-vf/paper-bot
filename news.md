@@ -7,8 +7,8 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-27 12:10 UTC, Simply Wall St.: [3 British Dividend Stocks With At Least 3% Yield](https://finance.yahoo.com/markets/stocks/articles/3-british-dividend-stocks-least-121049484.html)
 - 11-27 12:03 UTC, Stocktwits: [Crypto Stocks Gain After Bitcoin Tops $61K In Tech Rebound, But Analysts Want A Move Above $62K](https://finance.yahoo.com/markets/crypto/articles/crypto-stocks-gain-bitcoin-tops-120337366.html)
 - 11-27 12:00 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
-- 11-27 11:49 UTC, Bloomberg: [Heathrow and Rosebank Disputes Threaten Burnham’s Labour Unity](https://finance.yahoo.com/energy/articles/heathrow-rosebank-disputes-threaten-burnham-114914865.html)
 - 11-27 11:30 UTC, Oilprice.com: [Iraq Boosts Oil Exports to 3.6 Million Barrels per Day](https://finance.yahoo.com/energy/articles/iraq-boosts-oil-exports-3-113000006.html)
+- 11-27 11:28 UTC, MT Newswires: [Treasuries Fall as US Equity Futures Recover, Oil Prices Edge Higher, Commerzbank Says](https://finance.yahoo.com/economy/policy/articles/treasuries-fall-us-equity-futures-112819287.html)
 
 ## XLE
 
