@@ -1,18 +1,19 @@
 # Paper bot report
 
-Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-27 13:59 ET.
+Simulated money on Yahoo prices; no broker, no real orders. Updated 2026-11-27 14:01 ET.
 
 | | |
 | --- | --- |
 | Start | 110.00 USD |
 | Equity | 117.88 USD (+7.2%) |
-| Cash | 117.88 USD |
+| Cash | 2.36 USD |
 | Closed trades | 5 (5 won) |
 
 ## Open
 
 | symbol | market | qty | entry | stop | target | opened | why |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| XLE | ema_trend | 1.87325 | 61.6700 | 60.9670 | 64.4589 | 2026-11-27 14:01 ET | ema_trend {"fast": 10, "rr": 3, "side": 1, "slow": 50} (APPROVED, 135be6f140edcdf6) on the 1h close 61.8400 |
 
 ## Closed
 

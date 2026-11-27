@@ -2,14 +2,6 @@
 
 Headlines for the markets the bot trades. Informational only: not used for any decision.
 
-## CL=F
-
-- 11-27 18:53 UTC, Investor's Business Daily: [Viking, IBD Stock Of The Day, Is Cruising Toward Buy Points After Scraping Bottom](https://finance.yahoo.com/m/6f3e2d6d-374b-3f3f-83a4-0cbdd1522dab/viking%2C-ibd-stock-of-the-day%2C.html)
-- 11-27 18:18 UTC, MT Newswires: [US Dollar Strengthens Against Canada's Loonie Even as Treasury Yields, Gold Prices, Rise](https://finance.yahoo.com/markets/currencies/articles/us-dollar-strengthens-against-canada-181820241.html)
-- 11-27 18:07 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq end holiday week with gains as AI stocks rebound](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
-- 11-27 17:59 UTC, MT Newswires: [US Equity Markets Higher Amid Broad Rally Led by Technology, Consumer Discretionary Stocks](https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-higher-amid-175904719.html)
-- 11-27 17:44 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Friday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-friday-174441830.html)
-
 ## XLE
 
 - 11-27 17:44 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Friday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-friday-174441830.html)
@@ -17,6 +9,14 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-27 16:47 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-164750961.html)
 - 11-27 14:24 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Premarket Friday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-premarket-142412429.html)
 - 11-27 14:10 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-141000528.html)
+
+## CL=F
+
+- 11-27 18:53 UTC, Investor's Business Daily: [Viking, IBD Stock Of The Day, Is Cruising Toward Buy Points After Scraping Bottom](https://finance.yahoo.com/m/6f3e2d6d-374b-3f3f-83a4-0cbdd1522dab/viking%2C-ibd-stock-of-the-day%2C.html)
+- 11-27 18:18 UTC, MT Newswires: [US Dollar Strengthens Against Canada's Loonie Even as Treasury Yields, Gold Prices, Rise](https://finance.yahoo.com/markets/currencies/articles/us-dollar-strengthens-against-canada-181820241.html)
+- 11-27 18:07 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq end holiday week with gains as AI stocks rebound](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
+- 11-27 17:59 UTC, MT Newswires: [US Equity Markets Higher Amid Broad Rally Led by Technology, Consumer Discretionary Stocks](https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-higher-amid-175904719.html)
+- 11-27 17:44 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Friday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-friday-174441830.html)
 
 ## BTC-USD
 

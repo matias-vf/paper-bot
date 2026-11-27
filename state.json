@@ -1,6 +1,22 @@
 {
-  "cash": 117.88087708423642,
-  "positions": [],
+  "cash": 2.357617541684732,
+  "positions": [
+    {
+      "sym": "XLE",
+      "market": "ema_trend",
+      "version": "135be6f140edcdf6",
+      "verdict": "APPROVED",
+      "side": 1,
+      "qty": 1.87324895,
+      "entry": 61.66999816894531,
+      "stop": 60.967031,
+      "target": 64.458909,
+      "entry_bar_t": 1795806000,
+      "expires": 1795978898,
+      "opened": "2026-11-27 14:01 ET",
+      "why": "ema_trend {\"fast\": 10, \"rr\": 3, \"side\": 1, \"slow\": 50} (APPROVED, 135be6f140edcdf6) on the 1h close 61.8400"
+    }
+  ],
   "closed": [
     {
       "sym": "MSFT",
@@ -90,8 +106,9 @@
     "MSFT": 1794581100,
     "ETH-USD": 1794686400,
     "CL=F": 1794920400,
-    "EURUSD=X": 1795622400
+    "EURUSD=X": 1795622400,
+    "XLE": 1795802400
   },
   "equity": 117.8809,
-  "updated": "2026-11-27 13:59 ET"
+  "updated": "2026-11-27 14:01 ET"
 }

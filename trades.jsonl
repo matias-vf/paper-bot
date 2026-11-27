@@ -8,3 +8,4 @@
 {"event": "close", "sym": "ETH-USD", "exit": 1617.779907, "why": "target", "pnl": 3.413, "at": "2026-11-21 21:33:09Z"}
 {"event": "open", "sym": "EURUSD=X", "market": "rsi_reversion", "side": -1, "qty": 105.00282197, "entry": 1.098539, "stop": 1.101873, "target": 1.096945, "risk_usd": 0.35, "why": "rsi_reversion {\"low\": 30, \"rsi_n\": 14, \"stop_atr\": 3} (PROBATION, 4e672ec6161b23e5) on the 1h close 1.0982", "at": "2026-11-25 17:01:44Z"}
 {"event": "close", "sym": "EURUSD=X", "exit": 1.096852, "why": "target", "pnl": 0.1771, "at": "2026-11-26 01:35:06Z"}
+{"event": "open", "sym": "XLE", "market": "ema_trend", "side": 1, "qty": 1.87324895, "entry": 61.669998, "stop": 60.967031, "target": 64.458909, "risk_usd": 1.32, "why": "ema_trend {\"fast\": 10, \"rr\": 3, \"side\": 1, \"slow\": 50} (APPROVED, 135be6f140edcdf6) on the 1h close 61.8400", "at": "2026-11-27 19:01:39Z"}
