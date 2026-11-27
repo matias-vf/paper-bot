@@ -6,9 +6,9 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 - 11-27 09:20 UTC, Investing.com: [AI chip curbs, Musk’s giveaway and oil risks - what’s moving markets](https://finance.yahoo.com/markets/articles/ai-chip-curbs-musk-giveaway-092034519.html)
 - 11-27 09:11 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
+- 11-27 09:10 UTC, Simply Wall St.: [3 Oil And Gas Stocks Investors Are Watching As Brent Nears $100](https://finance.yahoo.com/energy/articles/3-oil-gas-stocks-investors-091035092.html)
 - 11-27 08:52 UTC, Investing.com: [FTSE 100 today: Stocks rise as miners lead on metals rebound](https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-rise-085208572.html)
 - 11-27 08:50 UTC, Motley Fool: [Berkshire Cut Chevron By About a Third This Year and Kept Occidental. What Does That Say About Oil Prices?](https://finance.yahoo.com/energy/articles/berkshire-cut-chevron-third-kept-085000850.html)
-- 11-27 08:30 UTC, Oilprice.com: [Iraq Delays Up to 30 Million Barrels of Crude Oil Shipments](https://finance.yahoo.com/energy/articles/iraq-delays-30-million-barrels-083000983.html)
 
 ## XLE
 
