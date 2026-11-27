@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-27 15:48 UTC, Reuters: [Oil on track for first weekly gain in November on supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
 - 11-27 15:37 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 15:29 UTC, InvestorsHub: [Vivakor Highlights Direct Midstream’s Texas Water Infrastructure Expansion Ahead of Planned Acquisition](https://finance.yahoo.com/energy/articles/vivakor-highlights-direct-midstream-texas-152945933.html)
 - 11-27 15:27 UTC, Investor's Business Daily: [Stock Market Surges As Jensen Huang Returns As Nvidia CEO; Abercrombie Leads Retail Winners: Weekly Review](https://finance.yahoo.com/m/82f15783-4cdf-3fac-b3ea-8874aa7f1b48/stock-market-surges-as-jensen.html)
 - 11-27 15:26 UTC, Insider Monkey: [Charles River Laboratories International (CRL) Positioned to Benefit as AI Accelerates Drug Discovery Pipelines](https://finance.yahoo.com/healthcare/articles/charles-river-laboratories-international-crl-152608033.html)
+- 11-27 15:03 UTC, 24/7 Wall St.: [Stock Market Today: Markets Off to a Strong Black Friday Start](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-markets-off-150313752.html)
 
 ## XLE
 
