@@ -4,10 +4,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 14:37 UTC, Insider Monkey: [IPG Photonics (IPGP) Fell on Continued Uncertainty Around Industrial Spending](https://finance.yahoo.com/markets/stocks/articles/ipg-photonics-ipgp-fell-continued-143758887.html)
 - 11-27 14:35 UTC, Insider Monkey: [Reports of Potential Company Sale Boosted CONMED (CNMD) Shares](https://finance.yahoo.com/markets/stocks/articles/reports-potential-company-sale-boosted-143544773.html)
 - 11-27 14:32 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 14:24 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Premarket Friday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-premarket-142412429.html)
-- 11-27 14:10 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-141000528.html)
 
 ## XLE
 
@@ -27,3 +27,8 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## EURUSD=X
 
+- 11-27 06:43 UTC, FX Empire: [US Dollar Price Forecast: DXY Slips Below 103.86 as EUR/USD, GBP/USD Weigh ECB, BoE](https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-dxy-064317496.html)
+- 11-26 06:50 UTC, FX Empire: [US Dollar Price Forecast: Yields Slide, DXY Eyes 104.08 as EUR/USD, GBP/USD Stall](https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-yields-065000519.html)
+- 11-25 07:00 UTC, FX Empire: [US Dollar Price Forecast: Dollar Steadies Before PCE, DXY Holds 103.80 as EUR/USD, GBP/USD Stall Below Pivots](https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-dollar-070000679.html)
+- 11-24 07:00 UTC, FX Empire: [US Dollar Price Forecast: Dollar Hits 19-Month High vs Euro, DXY Eyes 104.75 as EUR/USD, GBP/USD Fall](https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-dollar-070000107.html)
+- 11-23 08:04 UTC, FX Empire: [EUR/USD Weekly Forecast: Euro Stays Down Bad as Fed Hike Bets Put 1.0955 Support in Focus](https://finance.yahoo.com/markets/currencies/articles/eur-usd-weekly-forecast-euro-080453514.html)
