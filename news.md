@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 08:52 UTC, Investing.com: [FTSE 100 today: Stocks rise as miners lead on metals rebound](https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-rise-085208572.html)
 - 11-27 08:25 UTC, Reuters: [Oil on track to snap 3-week losing streak over supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
+- 11-27 07:44 UTC, Zacks: [Zacks Industry Outlook Highlights ConocoPhillips Occidental and Calumet](https://finance.yahoo.com/energy/articles/zacks-industry-outlook-highlights-conocophillips-074400946.html)
 - 11-27 07:11 UTC, Simply Wall St.: [Top 3 Undervalued Tech Stocks To Watch In November 2026](https://finance.yahoo.com/technology/articles/top-3-undervalued-tech-stocks-071100555.html)
 - 11-27 06:10 UTC, Simply Wall St.: [Our Pick Of The Best Australian Energy Stocks In November 2026](https://finance.yahoo.com/energy/articles/pick-best-australian-energy-stocks-061054788.html)
-- 11-27 05:18 UTC, Oilprice.com: [Oil Prices Climb as Middle East Supply Risks Overshadow Glut Fears](https://finance.yahoo.com/energy/articles/oil-prices-climb-middle-east-051844030.html)
-- 11-27 05:13 UTC, Simply Wall St.: [3 Oil Stocks With Direct Leverage To High Crude Prices](https://finance.yahoo.com/energy/articles/3-oil-stocks-direct-leverage-051324910.html)
 
 ## XLE
 
