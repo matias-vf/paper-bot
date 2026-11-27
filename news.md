@@ -7,8 +7,8 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-27 08:52 UTC, Investing.com: [FTSE 100 today: Stocks rise as miners lead on metals rebound](https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-rise-085208572.html)
 - 11-27 08:50 UTC, Motley Fool: [Berkshire Cut Chevron By About a Third This Year and Kept Occidental. What Does That Say About Oil Prices?](https://finance.yahoo.com/energy/articles/berkshire-cut-chevron-third-kept-085000850.html)
 - 11-27 08:25 UTC, Reuters: [Oil on track to snap 3-week losing streak over supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
+- 11-27 08:23 UTC, The Wall Street Journal: [Eurozone Bond Yields Track Treasury Yields, Oil Prices Higher](https://finance.yahoo.com/m/16548d8f-c0e1-3f33-ba6c-11c2e0ddb8e8/eurozone-bond-yields-track.html)
 - 11-27 07:44 UTC, Zacks: [Zacks Industry Outlook Highlights ConocoPhillips Occidental and Calumet](https://finance.yahoo.com/energy/articles/zacks-industry-outlook-highlights-conocophillips-074400946.html)
-- 11-27 07:11 UTC, Simply Wall St.: [Top 3 Undervalued Tech Stocks To Watch In November 2026](https://finance.yahoo.com/technology/articles/top-3-undervalued-tech-stocks-071100555.html)
 
 ## XLE
 
