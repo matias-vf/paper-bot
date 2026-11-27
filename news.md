@@ -5,10 +5,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 ## CL=F
 
 - 11-27 11:12 UTC, MT Newswires: [Renewed Tech Optimism Lifts Wall Street Pre-Bell; Asia, Europe Up](https://finance.yahoo.com/markets/stocks/articles/renewed-tech-optimism-lifts-wall-111258453.html)
+- 11-27 11:10 UTC, Simply Wall St.: [Birchcliff Energy And 2 More Canadian Energy Stocks To Watch](https://finance.yahoo.com/energy/articles/birchcliff-energy-2-more-canadian-111032749.html)
+- 11-27 11:09 UTC, Simply Wall St.: [Chevron Stock Leads The Oil Price Shock Theme For Integrated Energy Investors](https://finance.yahoo.com/energy/articles/chevron-stock-leads-oil-price-110947231.html)
 - 11-27 11:03 UTC, Investing.com: [Dollar drifts lower in holiday-thinned trade, set to snap 4-wk winning streak](https://finance.yahoo.com/markets/currencies/articles/asia-fx-weakens-high-oil-044524263.html)
 - 11-27 11:00 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
-- 11-27 10:12 UTC, InvestorsHub: [Oil Prices Rise as Middle East Supply Concerns Put Brent on Course to End Three-Week Losing Streak](https://finance.yahoo.com/energy/articles/oil-prices-rise-middle-east-101214060.html)
-- 11-27 10:08 UTC, InvestorsHub: [US Stock Futures Rally as AI Shares Recover, Chip Export Restrictions Disrupt Financing and Oil Supply Risks Persist: Dow Jones, S&P, Nasdaq, Wall Street](https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rally-ai-100839039.html)
 
 ## XLE
 
