@@ -4,10 +4,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 14:50 UTC, MT Newswires: [Canada Commodities: Oil Prices Mixed as Fighting Continues in The Middle East](https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-mixed-145049962.html)
 - 11-27 14:39 UTC, Insider Monkey: [Helios Technologies (HLIO): Solid Quarterly Results Muted by Ongoing Industrial Recovery Concerns](https://finance.yahoo.com/markets/stocks/articles/helios-technologies-hlio-solid-quarterly-143932872.html)
 - 11-27 14:37 UTC, Insider Monkey: [IPG Photonics (IPGP) Fell on Continued Uncertainty Around Industrial Spending](https://finance.yahoo.com/markets/stocks/articles/ipg-photonics-ipgp-fell-continued-143758887.html)
 - 11-27 14:35 UTC, Insider Monkey: [Reports of Potential Company Sale Boosted CONMED (CNMD) Shares](https://finance.yahoo.com/markets/stocks/articles/reports-potential-company-sale-boosted-143544773.html)
-- 11-27 14:32 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 
 ## XLE
 
