@@ -8,7 +8,7 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 - 11-27 10:08 UTC, InvestorsHub: [US Stock Futures Rally as AI Shares Recover, Chip Export Restrictions Disrupt Financing and Oil Supply Risks Persist: Dow Jones, S&P, Nasdaq, Wall Street](https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rally-ai-100839039.html)
 - 11-27 10:00 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 09:56 UTC, Reuters: [Oil on track to snap three-week losing streak over supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
-- 11-27 09:49 UTC, The Wall Street Journal: [U.S. Treasury Yields Rise in Shortened Post-Thanksgiving Trade](https://finance.yahoo.com/m/a1d04481-d551-394d-bcff-3c3d0122e2a6/u.s.-treasury-yields-rise-in.html)
+- 11-27 09:20 UTC, Investing.com: [AI chip curbs, Musk’s giveaway and oil risks - what’s moving markets](https://finance.yahoo.com/markets/articles/ai-chip-curbs-musk-giveaway-092034519.html)
 
 ## XLE
 
