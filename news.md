@@ -12,6 +12,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 21:10 UTC, The Wall Street Journal: [Treasury Yields Gain As U.S. Equities Rally](https://finance.yahoo.com/m/16548d8f-c0e1-3f33-ba6c-11c2e0ddb8e8/treasury-yields-gain-as-u.s..html)
+- 11-27 20:47 UTC, The Wall Street Journal: [Oil Futures Settle Lower Ahead of OPEC+ Policy Meeting](https://finance.yahoo.com/m/56fae783-b0c5-3ee1-8a03-9bb9a00bfa03/oil-futures-settle-lower.html)
+- 11-27 20:12 UTC, Reuters: [Oil notches first weekly gain in November on supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
+- 11-27 19:11 UTC, Simply Wall St.: [Energy Transfer Heads These 3 Top Pipeline Stocks To Watch](https://finance.yahoo.com/energy/articles/energy-transfer-heads-3-top-191152076.html)
+- 11-27 18:53 UTC, Investor's Business Daily: [Viking, IBD Stock Of The Day, Is Cruising Toward Buy Points After Scraping Bottom](https://finance.yahoo.com/m/6f3e2d6d-374b-3f3f-83a4-0cbdd1522dab/viking%2C-ibd-stock-of-the-day%2C.html)
 
 ## BTC-USD
 
