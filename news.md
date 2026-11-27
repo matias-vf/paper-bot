@@ -4,6 +4,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 15:05 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
+- 11-27 15:00 UTC, Associated Press: [BC-Crude Oil Futures](https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150017820.html)
+- 11-27 14:55 UTC, Insider Monkey: [Moderating Spot Rates and Freight Recovery Uncertainty Pressures Werner Enterprises (WERN)](https://finance.yahoo.com/markets/stocks/articles/moderating-spot-rates-freight-recovery-145539474.html)
+- 11-27 14:51 UTC, Investor's Business Daily: [Stock Market Today: Dow Jumps 500 Points While Nvidia Wavers; Anthropic, Tesla, SpaceX Rally (Live Coverage)](https://finance.yahoo.com/m/86a4597f-ee47-3048-ae92-1a56fa4711e5/stock-market-today%3A-dow-jumps.html)
 
 ## XLE
 
