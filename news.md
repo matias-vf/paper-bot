@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 02:40 UTC, Investing.com: [Oil set for first weekly gain in November as Gulf attacks threaten supply recovery](https://finance.yahoo.com/energy/articles/oil-set-first-weekly-gain-024015834.html)
 - 11-27 02:00 UTC, Reuters: [Shares find footing after bruising month, dollar set for third monthly gain](https://finance.yahoo.com/markets/articles/shares-footing-bruising-month-dollar-020059656.html)
 - 11-27 01:48 UTC, The Wall Street Journal: [Oil Mixed as Markets Track Mideast Developments, U.S. Inventories](https://finance.yahoo.com/m/56fae783-b0c5-3ee1-8a03-9bb9a00bfa03/oil-mixed-as-markets-track.html)
 - 11-27 01:00 UTC, Oilprice.com: [Standard Chartered: Oil Needs a New Shock to Fall Further](https://finance.yahoo.com/energy/articles/standard-chartered-oil-needs-shock-010000737.html)
 - 11-26 22:35 UTC, Motley Fool: [Should You Buy Tesla Stock Before December?](https://finance.yahoo.com/markets/stocks/articles/buy-tesla-stock-december-223502338.html)
-- 11-26 21:27 UTC, MT Newswires: [First Helium Provides Update on Acquisition of Shallow Heavy Oil Assets in Alberta](https://finance.yahoo.com/energy/articles/first-helium-provides-acquisition-shallow-212703027.html)
 
 ## XLE
 
