@@ -4,9 +4,9 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-27 09:41 UTC, Reuters: [Oil on track to snap 3-week losing streak over supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
+- 11-27 10:00 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
+- 11-27 09:56 UTC, Reuters: [Oil on track to snap three-week losing streak over supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
 - 11-27 09:20 UTC, Investing.com: [AI chip curbs, Musk’s giveaway and oil risks - what’s moving markets](https://finance.yahoo.com/markets/articles/ai-chip-curbs-musk-giveaway-092034519.html)
-- 11-27 09:11 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 09:10 UTC, Simply Wall St.: [3 Oil And Gas Stocks Investors Are Watching As Brent Nears $100](https://finance.yahoo.com/energy/articles/3-oil-gas-stocks-investors-091035092.html)
 - 11-27 08:52 UTC, Investing.com: [FTSE 100 today: Stocks rise as miners lead on metals rebound](https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-rise-085208572.html)
 
