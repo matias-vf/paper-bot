@@ -4,9 +4,9 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 17:34 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 17:27 UTC, MT Newswires: [Exchange-Traded Funds Higher as US Equities Advance in Friday Trading](https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-us-172712881.html)
 - 11-27 16:47 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-164750961.html)
-- 11-27 16:46 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 16:36 UTC, Reuters: [Iraq in talks with OPEC for higher oil quota, minister says before OPEC+ meeting ](https://finance.yahoo.com/news/iraq-talks-opec-higher-oil-163604121.html)
 - 11-27 16:34 UTC, 24/7 Wall St.: [Own SCHD? These 6 Dividend Aristocrats Are Protecting Your Income for 2027](https://finance.yahoo.com/markets/stocks/articles/own-schd-6-dividend-aristocrats-163409181.html)
 
