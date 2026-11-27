@@ -5,10 +5,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 ## CL=F
 
 - 11-27 13:58 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
+- 11-27 13:52 UTC, MT Newswires: [Update: US Equity Futures Climb Pre-Bell as Traders Prepare to Wind Down Volatile Holiday Week](https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-climb-pre-135223782.html)
 - 11-27 13:16 UTC, Reuters: [US stock selloffs trigger a new kind of dollar bounce](https://finance.yahoo.com/markets/currencies/articles/us-stock-selloffs-trigger-kind-131650853.html)
 - 11-27 13:07 UTC, Investor's Business Daily: [Stock Market Today: Dow Jumps 715 Points As Nvidia Rebounds; Anthropic, SpaceX, Tesla Rally (Live Coverage)](https://finance.yahoo.com/m/86a4597f-ee47-3048-ae92-1a56fa4711e5/stock-market-today%3A-dow-jumps.html)
 - 11-27 12:56 UTC, Reuters: [Oil on track to snap three-week losing streak over supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
-- 11-27 12:47 UTC, Investing.com: [2027 oil price forecast: Where BofA thinks Brent is headed next](https://finance.yahoo.com/energy/articles/2027-oil-price-forecast-where-124700957.html)
 
 ## XLE
 
