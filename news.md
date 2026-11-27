@@ -4,11 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 06:10 UTC, Simply Wall St.: [Our Pick Of The Best Australian Energy Stocks In November 2026](https://finance.yahoo.com/energy/articles/pick-best-australian-energy-stocks-061054788.html)
 - 11-27 05:18 UTC, Oilprice.com: [Oil Prices Climb as Middle East Supply Risks Overshadow Glut Fears](https://finance.yahoo.com/energy/articles/oil-prices-climb-middle-east-051844030.html)
 - 11-27 05:13 UTC, Simply Wall St.: [3 Oil Stocks With Direct Leverage To High Crude Prices](https://finance.yahoo.com/energy/articles/3-oil-stocks-direct-leverage-051324910.html)
 - 11-27 05:12 UTC, Simply Wall St.: [British Energy Stocks To Watch In November 2026](https://finance.yahoo.com/energy/articles/british-energy-stocks-watch-november-051209541.html)
 - 11-27 04:45 UTC, Investing.com: [Dollar drifts lower in holiday-thinned trade, set to snap 4-wk winning streak](https://finance.yahoo.com/markets/currencies/articles/asia-fx-weakens-high-oil-044524263.html)
-- 11-27 04:36 UTC, Investing.com: [IMF urges RBA to maintain rate hike bias as inflation risks persist](https://finance.yahoo.com/economy/policy/articles/imf-urges-rba-maintain-rate-043609646.html)
 
 ## XLE
 
