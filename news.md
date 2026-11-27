@@ -4,19 +4,9 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-27 05:18 UTC, Oilprice.com: [Oil Prices Climb as Middle East Supply Risks Overshadow Glut Fears](https://finance.yahoo.com/energy/articles/oil-prices-climb-middle-east-051844030.html)
-- 11-27 05:13 UTC, Simply Wall St.: [3 Oil Stocks With Direct Leverage To High Crude Prices](https://finance.yahoo.com/energy/articles/3-oil-stocks-direct-leverage-051324910.html)
-- 11-27 05:12 UTC, Simply Wall St.: [British Energy Stocks To Watch In November 2026](https://finance.yahoo.com/energy/articles/british-energy-stocks-watch-november-051209541.html)
-- 11-27 04:45 UTC, Investing.com: [Dollar drifts lower in holiday-thinned trade, set to snap 4-wk winning streak](https://finance.yahoo.com/markets/currencies/articles/asia-fx-weakens-high-oil-044524263.html)
-- 11-27 04:36 UTC, Investing.com: [IMF urges RBA to maintain rate hike bias as inflation risks persist](https://finance.yahoo.com/economy/policy/articles/imf-urges-rba-maintain-rate-043609646.html)
 
 ## XLE
 
-- 11-25 20:56 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-205633406.html)
-- 11-25 20:33 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203348957.html)
-- 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
-- 11-25 18:16 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181625095.html)
-- 11-25 18:11 UTC, MT Newswires: [Exchange-Traded Funds Lower as US Equities Fall After Midday](https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-181148276.html)
 
 ## BTC-USD
 
