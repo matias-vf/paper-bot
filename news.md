@@ -4,11 +4,6 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-27 11:34 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq futures gain as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
-- 11-27 11:28 UTC, MT Newswires: [Treasuries Fall as US Equity Futures Recover, Oil Prices Edge Higher, Commerzbank Says](https://finance.yahoo.com/economy/policy/articles/treasuries-fall-us-equity-futures-112819287.html)
-- 11-27 11:12 UTC, MT Newswires: [Renewed Tech Optimism Lifts Wall Street Pre-Bell; Asia, Europe Up](https://finance.yahoo.com/markets/stocks/articles/renewed-tech-optimism-lifts-wall-111258453.html)
-- 11-27 11:10 UTC, Simply Wall St.: [Birchcliff Energy And 2 More Canadian Energy Stocks To Watch](https://finance.yahoo.com/energy/articles/birchcliff-energy-2-more-canadian-111032749.html)
-- 11-27 11:09 UTC, Simply Wall St.: [Chevron Stock Leads The Oil Price Shock Theme For Integrated Energy Investors](https://finance.yahoo.com/energy/articles/chevron-stock-leads-oil-price-110947231.html)
 
 ## XLE
 
