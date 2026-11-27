@@ -4,19 +4,19 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
+- 11-27 16:47 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-164750961.html)
 - 11-27 16:46 UTC, Yahoo Finance: [Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady](https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html)
 - 11-27 16:36 UTC, Reuters: [Iraq in talks with OPEC for higher oil quota, minister says before OPEC+ meeting ](https://finance.yahoo.com/news/iraq-talks-opec-higher-oil-163604121.html)
 - 11-27 16:34 UTC, 24/7 Wall St.: [Own SCHD? These 6 Dividend Aristocrats Are Protecting Your Income for 2027](https://finance.yahoo.com/markets/stocks/articles/own-schd-6-dividend-aristocrats-163409181.html)
 - 11-27 15:48 UTC, Reuters: [Oil on track for first weekly gain in November on supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
-- 11-27 15:29 UTC, InvestorsHub: [Vivakor Highlights Direct Midstream’s Texas Water Infrastructure Expansion Ahead of Planned Acquisition](https://finance.yahoo.com/energy/articles/vivakor-highlights-direct-midstream-texas-152945933.html)
 
 ## XLE
 
+- 11-27 16:47 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-164750961.html)
 - 11-27 14:24 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Premarket Friday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-premarket-142412429.html)
 - 11-27 14:10 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-141000528.html)
 - 11-25 20:56 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Late Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-205633406.html)
 - 11-25 20:33 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-203348957.html)
-- 11-25 18:47 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Wednesday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-wednesday-184725184.html)
 
 ## BTC-USD
 
