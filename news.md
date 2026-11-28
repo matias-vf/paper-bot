@@ -21,8 +21,8 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 ## BTC-USD
 
 - 11-27 17:02 UTC, 24/7 Wall St.: [Billionaire Paul Tudor Jones’ Firm Nearly Doubled Its Bitcoin ETF Shares to 1.36 Million](https://finance.yahoo.com/markets/crypto/articles/billionaire-paul-tudor-jones-firm-170238951.html)
+- 11-27 14:06 UTC, MT Newswires: [Exchange-Traded Funds, Equity Futures Higher Pre-Bell Friday Amid Technology Stock Rebound](https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-140653942.html)
 - 11-26 12:20 UTC, Motley Fool: [Billionaire Investor Paul Tudor Jones Just Doubled Down on Bitcoin. What Does He Know That the Market Doesn't?](https://finance.yahoo.com/markets/crypto/articles/billionaire-investor-paul-tudor-jones-122002931.html)
-- 11-25 22:26 UTC, Motley Fool: [Crypto Market Today, Nov. 25: Bitcoin, Ethereum, and Solana as Short Liquidations Fuel Fragile Rebound](https://finance.yahoo.com/markets/crypto/articles/crypto-market-today-nov-25-222619217.html)
 
 ## EURUSD=X
 
