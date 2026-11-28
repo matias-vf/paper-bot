@@ -13,10 +13,10 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 ## CL=F
 
 - 11-28 00:15 UTC, Simply Wall St.: [NIO And 2 Other Top EV Stocks](https://finance.yahoo.com/energy/articles/nio-2-other-top-ev-001507883.html)
+- 11-27 21:14 UTC, Barchart: [Soybeans Rally on the Short Friday Session](https://finance.yahoo.com/markets/commodities/articles/soybeans-rally-short-friday-session-211409692.html)
 - 11-27 21:10 UTC, The Wall Street Journal: [Treasury Yields Gain As U.S. Equities Rally](https://finance.yahoo.com/m/16548d8f-c0e1-3f33-ba6c-11c2e0ddb8e8/treasury-yields-gain-as-u.s..html)
 - 11-27 20:47 UTC, The Wall Street Journal: [Oil Futures Settle Lower Ahead of OPEC+ Policy Meeting](https://finance.yahoo.com/m/56fae783-b0c5-3ee1-8a03-9bb9a00bfa03/oil-futures-settle-lower.html)
 - 11-27 20:41 UTC, Investing.com: [Market Swings Spooked Retail Traders—And Lifted CME Group Up 18%](https://finance.yahoo.com/markets/options/articles/market-swings-spooked-retail-traders-204136574.html)
-- 11-27 20:12 UTC, Reuters: [Oil notches first weekly gain in November on supply fears](https://finance.yahoo.com/energy/articles/oil-track-snap-3-week-082519990.html)
 
 ## BTC-USD
 
