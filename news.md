@@ -4,6 +4,11 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## XLE
 
+- 11-27 17:44 UTC, MT Newswires: [Sector Update: Energy Stocks Rise Friday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-friday-174441830.html)
+- 11-27 17:27 UTC, MT Newswires: [Exchange-Traded Funds Higher as US Equities Advance in Friday Trading](https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-us-172712881.html)
+- 11-27 16:47 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-164750961.html)
+- 11-27 14:24 UTC, MT Newswires: [Sector Update: Energy Stocks Advance Premarket Friday](https://finance.yahoo.com/energy/articles/sector-energy-stocks-advance-premarket-142412429.html)
+- 11-27 14:10 UTC, MT Newswires: [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-141000528.html)
 
 ## CL=F
 
