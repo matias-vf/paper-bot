@@ -12,11 +12,6 @@ Headlines for the markets the bot trades. Informational only: not used for any d
 
 ## CL=F
 
-- 11-28 05:32 UTC, Investing.com: [China’s import logistics demand falls 0.6% in January-October](https://finance.yahoo.com/economy/articles/china-import-logistics-demand-falls-053255400.html)
-- 11-28 03:12 UTC, Simply Wall St.: [3 Hydrogen Stocks With Earnings Growth Up To 62%](https://finance.yahoo.com/energy/articles/3-hydrogen-stocks-earnings-growth-031246450.html)
-- 11-28 00:15 UTC, Simply Wall St.: [NIO And 2 Other Top EV Stocks](https://finance.yahoo.com/energy/articles/nio-2-other-top-ev-001507883.html)
-- 11-27 21:14 UTC, Barchart: [Soybeans Rally on the Short Friday Session](https://finance.yahoo.com/markets/commodities/articles/soybeans-rally-short-friday-session-211409692.html)
-- 11-27 21:10 UTC, The Wall Street Journal: [Treasury Yields Gain As U.S. Equities Rally](https://finance.yahoo.com/m/16548d8f-c0e1-3f33-ba6c-11c2e0ddb8e8/treasury-yields-gain-as-u.s..html)
 
 ## BTC-USD
 
